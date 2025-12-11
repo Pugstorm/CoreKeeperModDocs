@@ -20,5 +20,3 @@ Here is how it works:
 Every contribution helps us keep the documentation accurate, clear, and actually useful for the entire modding community. So seriously, a big thank you for taking the time to support it!
 
 {% embed url="https://github.com/Pugstorm/CoreKeeperModSDK" %}
-
-{% embed url="https://github.com/Pugstorm/CoreKeeperModSDK" %}
