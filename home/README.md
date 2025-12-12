@@ -10,7 +10,7 @@ Welcome to the official documentation for the Core Keeper modding SDK. This docu
 
 Modding is way more fun when you're not going at it alone. If you ever get stuck, need a new idea, or you just want to connect with other modders and developers, our [Official Discord](https://discord.gg/CoreKeeper) community is super open and welcoming!
 
-We care about what you think.  you find something we can do better, have a cool idea, or want to point out  is working, reach out. Your input helps us keep the modding community lively and growing right alongside the game itself.
+We care about what you think. Whether you find something we can do better, have a cool idea, or want to point out if something is/isn't working, feel free to reach out. Your input helps us keep the modding community lively and growing right alongside the game itself.
 
 ## Where to Start
 
