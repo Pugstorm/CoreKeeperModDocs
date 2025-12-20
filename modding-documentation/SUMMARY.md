@@ -17,7 +17,3 @@
 * [Explore Mods](playing-with-mods/explore-mods.md)
 * [Installing Mods](playing-with-mods/installing-mods.md)
 * [Uninstalling Mods](playing-with-mods/uninstalling-mods.md)
-
-## Copy of Copy of Start
-
-## Copy of Copy of Copy of Start
