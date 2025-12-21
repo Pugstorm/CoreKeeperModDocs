@@ -18,7 +18,13 @@ Head over to the PugMod window in Unity, and select "Open Mod SDK Window". Then 
 {% step %}
 ### Creating Scriptable Data Directory config
 
-To mod a ScriptableDataBlock you will first need to make sure that you have an Scriptable Object in your Mods' Folder called <mark style="color:red;">**config(its called something else, check when home)**</mark> if your mod is older then you can simply do this by heading over to your mods' folder and then generating the asset by going to <mark style="color:red;">**Assets/ScriptableData/ScriptableDataDirectoryConfig**</mark> this will generate the required asset.
+To mod a ScriptableDataBlock you will first need to make sure that you have a Scriptable Object in your Mods' Folder called \<ModName>, of the type `ScriptableDataDirectory`.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+If your mod is older then you can simply do this by heading over to your mods' folder and then generating the asset by going to the Assets window, and selecting Create -> Scriptable Data -> Additional Data Directory. This will generate the required asset. Make sure it's in the mod folder in which you want to mod Scriptable Data Blocks!
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 <mark style="color:red;">**add images of ScriptableDataBlock editor window and step-by-step setup**</mark>&#x20;
 {% endstep %}
