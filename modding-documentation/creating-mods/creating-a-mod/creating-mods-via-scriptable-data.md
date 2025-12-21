@@ -44,11 +44,11 @@ ScriptableDataBlocks can be edited in the inspector by selecting the instance of
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-Simply make the changes that you'd like to make to the ScriptableDataBlock and then build the mod. The easiest way to test that everything you've set up works as intended is to change the Cow DataBlock, of the GradientMapDataBlock type.&#x20;
+Simply make the changes that you'd like to make to the ScriptableDataBlock and then build the mod. The easiest way to test that you've set up everything correctly and that the Scriptable Data Block mods will work is to assign a new Gradient Map Data Block to a Sprite Asset.
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-Then once you've built the mod launch your game and test if the ScriptableDataBlock mod reflects, if you changed the GradientMapDataBlock for Cow then that color should reflect on your common Moolin friend.
+Then once you've saved the changes and built the mod, you can launch your game and test if the ScriptableDataBlock mod changes are reflected in-game.
 {% endstep %}
 
 {% step %}
