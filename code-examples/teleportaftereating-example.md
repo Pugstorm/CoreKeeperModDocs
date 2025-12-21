@@ -44,10 +44,10 @@ public class TeleportAfterEating
         for (int i = 0; i < 100; i++)
         {
             //we offset the player by up to 50 tiles in any direction from the players' current position.
-            float2 playerOffset = random.NextFloat2(-50f, 50f);
+            var playerOffset = random.NextFloat2(-50f, 50f);
 
             //try to place the player in this position.
-            float2 targetTile = new float2(playerPosition.x, playerPosition.z) + playerOffset;
+            var targetTile = new float2(playerPosition.x, playerPosition.z) + playerOffset;
 
             //check what the tile type is of the tile which we want to place our player on.
             var tile = tileLookup.GetTopTile((int2)math.round(targetTile)).tileType;
@@ -71,5 +71,4 @@ public class TeleportAfterEating
         }
     }
 }
-
 ```

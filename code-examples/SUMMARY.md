@@ -10,5 +10,4 @@
 * [Player Reskin and Recolor Example](player-reskin-and-recolor-example.md)
 * [Player New Skins & Colors Example](player-new-skins-and-colors-example.md)
 * [TeleportAfterEating Example](teleportaftereating-example.md)
-* [API Example 2](api-example-2.md)
-* [API Example 3](api-example-3.md)
+* [SpawnStuffFromTiles Example](spawnstufffromtiles-example.md)
