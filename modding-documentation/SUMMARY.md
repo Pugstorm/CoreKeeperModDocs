@@ -3,7 +3,6 @@
 ## Creating Mods
 
 * [Setting up the Modding Environment](README.md)
-  * [Setting up Core Keeper Mod SDK](creating-mods/setting-up-the-modding-environment/setting-up-core-keeper-mod-sdk.md)
   * [Updating Game Assets](creating-mods/setting-up-the-modding-environment/updating-game-assets.md)
   * [Updating Game Files](creating-mods/setting-up-the-modding-environment/updating-game-files.md)
 * [Creating a Mod](creating-mods/creating-a-mod/README.md)
