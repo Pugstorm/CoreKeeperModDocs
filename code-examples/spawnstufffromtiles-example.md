@@ -70,7 +70,7 @@ public class SpawnStuffFromTiles : IMod
         //play a sound effect.
         API.Audio.PlaySfx((int)SfxID.AF_portal_teleport, FXPosition, pitchMultiplier: 1f, volumeMultiplier: 2f);
 
-        //get a random Object ID between 1001 and 1011.
+        //get a random Object ID between 1001 and 1011, on Core Keepers' end these are all the bars from bronze to relucite.
         int randomObjectID = random.NextInt(1001, 1011);
 
         //drop the object.
