@@ -79,7 +79,7 @@ public class SpawnStuffFromTiles : IMod
 }
 
 [HarmonyPatch(typeof(ShovelSlot), "PlayDigEffects")]
-public class HauntedDigPatch
+public class SpawnObjectAndPlayFXAfterShoveling
 {
     private static Unity.Mathematics.Random random;
 
