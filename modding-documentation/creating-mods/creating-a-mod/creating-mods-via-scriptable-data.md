@@ -30,13 +30,25 @@ If your mod is older then you can simply do this by heading over to your mods' f
 {% step %}
 ### Choosing a ScriptableDataBlock to mod
 
-Open up the Scriptable Data Editor Window by going to Window -> Scriptable Data Editor <mark style="color:red;">**(it could be nice QoL for modders to have all the windows they need to work with under the PugMod window)**</mark> once it's open you'll see a dropdown for ScriptableDataBlock types, these types are retrieved from the assemblies that are imported into the ModSDK during the "Updating Game Files" step. Once you've picked a ScriptableDataBlock which you think would be fun to mod you can right click it on the left-hand side in the Scriptable Data Editor Window and click Overload to -> \<YourScriptableDataDirectoryConfig>. Make sure the config is located in the right mod folder for which you want to build this scriptable data mod!
+Open up the Scriptable Data Editor Window by going to Window -> Scriptable Data Editor <mark style="color:red;">**(it could be nice QoL for modders to have all the windows they need to work with under the PugMod window)**</mark> once it's open you'll see a dropdown for ScriptableDataBlock types, these types are retrieved from the assemblies that are imported into the ModSDK during the "Updating Game Files" step. Once you've picked a ScriptableDataBlock which you think would be fun to mod you can right click it on the left-hand side in the Scriptable Data Editor Window and click Overload to -> \<YourScriptableDataDirectoryConfig>.&#x20;
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Make sure the config is located in the right mod folder for which you want to build this Scriptable Data mod!
 {% endstep %}
 
 {% step %}
 ### Editing your modded ScriptableDataBlock
 
-ScriptableDataBlocks can be edited in the inspector by selecting the instance of that ScriptableDataBlock in your mods' folder, but it's easier and more convenient due to several QoL features to do so in the Scriptable Data Editor Window. Simply make the changes that you'd like to make to the ScriptableDataBlock and then build the mod. The easiest way to test that everything you've set up works as intended is to change the Cow DataBlock, of the GradientMapDataBlock type. Then once you've built the mod launch your game and test if the ScriptableDataBlock mod reflects, if you changed the GradientMapDataBlock for Cow then that color should reflect on your common Moolin friend.
+ScriptableDataBlocks can be edited in the inspector by selecting the instance of that ScriptableDataBlock in your mods' folder, but it's easier and more convenient due to several QoL features to do so in the Scriptable Data Editor Window.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Simply make the changes that you'd like to make to the ScriptableDataBlock and then build the mod. The easiest way to test that everything you've set up works as intended is to change the Cow DataBlock, of the GradientMapDataBlock type.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Then once you've built the mod launch your game and test if the ScriptableDataBlock mod reflects, if you changed the GradientMapDataBlock for Cow then that color should reflect on your common Moolin friend.
 {% endstep %}
 
 {% step %}
