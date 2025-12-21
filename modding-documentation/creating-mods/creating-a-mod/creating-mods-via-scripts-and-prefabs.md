@@ -22,15 +22,37 @@ To create a script for your mod, head over to Assets/\<YourModNameFolder> and in
 {% endstep %}
 
 {% step %}
-### <mark style="color:red;">**Using the API**</mark>
+### Using the API&#x20;
 
-<mark style="color:red;">**detail everything in API.cs (can be found in pugmod package runtime folder) and how it can be used for modding.**</mark>
+The IMod interface is the basic interface used to initialize your scripts. From there you can access most of the game files. The functions provided under the PugMod.API are the most stable currently so try to use them whenever possible.&#x20;
+
+Here are a couple of common API calls that you can use:
+
+* API.Server.DropObject can be used to spawn anything that has an ObjectID.
+* API.Effects.PlayPuff\` can be used to play VFX.
+* API.Audio.PlaySfx can be used to play SFX.
+* API.Server.World can be used to interact with the server.
 {% endstep %}
 
 {% step %}
-### <mark style="color:red;">**Scripting Restrictions**</mark>
+### Scripting Restrictions
 
-<mark style="color:red;">**detail what scripting restrictions exist (accessing extra assemblies, System.IO, etc) and how they can be bypassed in the mod builder settings.**</mark>
+The only limit to what you can access are things like I/O and network operations that might be damaging to the host computer. Otherwise the only limitation is that the more “internal” functions that are accessed, the more likely this will break in future updates.
+
+The main restricted parts are:
+
+* System.IO
+* System.Diagnostics
+* System.Net
+* System.Runtime.InteropServices
+* System.Reflection
+* System.AppDomain
+* Application.Quit
+* Accessing native assemblies
+
+You can overcome these limitations by finding the Mod Builder Settings Scriptable Object instance in your Assets folder, it will be named after your mods' folder. Once you've located it, check **Skip Safety Checks** and **Accesses Extra Assemblies**. The downside of this is that your built mod will be marked with a tag informing mod users that these assemblies have skipped safety checks and may access other assemblies.
+
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
