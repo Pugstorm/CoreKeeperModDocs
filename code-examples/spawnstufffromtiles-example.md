@@ -44,7 +44,7 @@ public class SpawnStuffFromTiles : IMod
     {
         var player = Manager.main.player;
 
-        if (player != null)
+        if (player == null)
         {
             return;
         }
@@ -63,7 +63,7 @@ public class SpawnStuffFromTiles : IMod
         // Get the local players' instance.
         var player = Manager.main.player;
 
-        if (player != null)
+        if (player == null)
         {
             return;
         }
