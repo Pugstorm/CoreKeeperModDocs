@@ -16,10 +16,12 @@ using PlayerEquipment;
 
 public class SpawnStuffFromTiles : IMod
 {
-    // We have these flags and the entire script split into an IMod implementation and a Harmony patch because the API calls we use must run on Unitys' main thread.
-    // If we tried to run them in ECS which is where ShovelSlot.PlayDigEffects() runs, it would break.
-    // So the Harmony patch just detects when ShovelSlot.PlayDigEffects() has finished and sets a flag to true,
-    // and then the Update() method which runs every frame on the main thread checks that flag and runs our logic.
+   /* 
+    * We have these flags and the entire script split into an IMod implementation and a Harmony patch because the API calls we use must run on Unitys' main thread.
+    * If we tried to run them in ECS which is where ShovelSlot.PlayDigEffects() runs, it would break.
+    * So the Harmony patch just detects when ShovelSlot.PlayDigEffects() has finished and sets a flag to true, 
+    * and then the Update() method which runs every frame on the main thread checks that flag and runs our logic.
+    */
     public static bool spawnObjectAndFX = false;
     public static float3 diggingPosition;
     private static Unity.Mathematics.Random random;
@@ -111,6 +113,22 @@ public class SpawnObjectAndPlayFXAfterShoveling
             // Return early if it's not our player so that we don't get teleported whenever other party members eat.
             return;
         }
+
+        // Random number generating utility that is thread-safe, use this over Random.Range when working in ECS.
+        random = new Unity.Mathematics.Random((uint)DateTime.Now.Ticks);
+
+        // Roll 1-100 and if we roll above 50 then the Object gets spawned and SFX+VFX play.
+        if (random.NextInt(0, 100) < 50)
+        {
+            // Tile that's causing the effect to occur.
+            SpawnStuffFromTiles.diggingPosition = position;
+
+            // Tells Update that we're now meeting all the conditions to spawn the Object and play the SFX+VFX.
+            SpawnStuffFromTiles.spawnObjectAndFX = true;
+        }
+    }
+}
+
 
         // Random number generating utility that is thread-safe, use this over Random.Range when working in ECS.
         random = new Unity.Mathematics.Random((uint)DateTime.Now.Ticks);
