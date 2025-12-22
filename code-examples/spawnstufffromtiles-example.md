@@ -1,7 +1,7 @@
 ---
 description: >-
   This is a mod which showcases how to unite ECS and non-ECS calls and use API
-  calls safely.
+  calls safely. This mod doesn't currently work in multiplayer.
 ---
 
 # SpawnStuffFromTiles Example
