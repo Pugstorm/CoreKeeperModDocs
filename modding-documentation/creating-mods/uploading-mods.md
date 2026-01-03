@@ -14,7 +14,10 @@ By default if you click on `Initialize Steam` it will initialize Core Keepers' a
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-Once Core Keepers' steam app has been initialized, you will need to fill out a couple of fields such as Mod Name, Mod Tags, and so on. Once you're ready you may click to upload your mod to Steam Workshop.    &#x20;
+Once Core Keepers' steam app has been initialized, you will need to fill out a couple of fields such as Mod Name, Mod Tags, and so on. Once you're ready you may click to upload your mod to Steam Workshop.
 
-you can upload mods to Mod.IO directly from the Core Keeper ModSDK, however you will first need to create a Mod.IO account.
+## Mod.IO
+
+\
+You can upload mods to Mod.IO directly from the Core Keeper ModSDK, however you will first need to create a Mod.IO account.
 
