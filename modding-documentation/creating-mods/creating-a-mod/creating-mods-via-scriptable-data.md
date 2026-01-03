@@ -32,7 +32,7 @@ If your mod is older then you can simply do this by heading over to your mods' f
 
 Open up the Scriptable Data Editor Window by going to Window -> Scriptable Data Editor <mark style="color:red;">**(it could be nice QoL for modders to have all the windows they need to work with under the PugMod window)**</mark> once it's open you'll see a dropdown for ScriptableDataBlock types, these types are retrieved from the assemblies that are imported into the ModSDK during the "Updating Game Files" step. Once you've picked a ScriptableDataBlock which you think would be fun to mod you can right click it on the left-hand side in the Scriptable Data Editor Window and click Overload to -> \<YourScriptableDataDirectoryConfig>.&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Make sure the config is located in the right mod folder for which you want to build this Scriptable Data mod!
 {% endstep %}
@@ -42,7 +42,7 @@ Make sure the config is located in the right mod folder for which you want to bu
 
 ScriptableDataBlocks can be edited in the inspector by selecting the instance of that ScriptableDataBlock in your mods' folder, but it's easier and more convenient due to several QoL features to do so in the Scriptable Data Editor Window.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Simply make the changes that you'd like to make to the ScriptableDataBlock and then build the mod. The easiest way to test that you've set up everything correctly and that the Scriptable Data Block mods will work is to assign a new Gradient Map Data Block to a Sprite Asset.
 

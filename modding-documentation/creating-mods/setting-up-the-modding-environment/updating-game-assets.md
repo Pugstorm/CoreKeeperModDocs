@@ -4,7 +4,7 @@
 
 In order to set up Asset Ripper you have to first download it here for your corresponding platform - [https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1](https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1) . The version must be 1.2.1. You may pick any of the .zip folders that are compatible with your System, for most users this will be `AssetRipper_win_x64.zip` .
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Exporting the Game Assets
 
