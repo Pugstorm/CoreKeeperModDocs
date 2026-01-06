@@ -18,4 +18,10 @@ Sometimes an asset like a Prefab or a Scriptable Object will lose a reference to
 
 an in-game UI tool for modders to find scenes, sprites, and much more. You can read more in-depth about the tool [here](https://thunderstore.io/c/boneworks/p/sinai-dev/UnityExplorer_IL2CPP_ML/) as well as manually install it.
 {% endstep %}
+
+{% step %}
+### Pixelorama
+
+Pixelorama is a free open-source pixel editor, it can be really useful if you're looking to mod sprites or player customization. You can find out more about it [here](https://pixelorama.org/Introduction).
+{% endstep %}
 {% endstepper %}
