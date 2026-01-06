@@ -6,7 +6,7 @@ Addressables aren't used to build mods though. We add the necessary identifier t
 
 This means Addressables settings in the Mod SDK project does not have any effect, so you can ignore any label and group setting even though some assets might get some labels etc. automatically.
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
@@ -24,4 +24,4 @@ This means Addressables settings in the Mod SDK project does not have any effect
 
 <figure><img src=".gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
