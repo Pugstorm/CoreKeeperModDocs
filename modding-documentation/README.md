@@ -1,8 +1,6 @@
 # Setting up the Modding Environment
 
-You will need to have Unity to open up the ModSDK,&#x20;
-
-
+You will need to have Unity to open up the ModSDK. If you haven't set up Unity yet, head [here](https://unity.com/releases/unity-6).
 
 The Core Keeper Mod SDK (Software Development Kit) is a Unity project which can be opened with Unity version 6000.0.59f2.&#x20;
 
