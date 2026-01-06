@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Page](README.md)
+* [Frequently Asked Questions](README.md)
