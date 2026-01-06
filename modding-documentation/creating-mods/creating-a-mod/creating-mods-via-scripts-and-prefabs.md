@@ -64,7 +64,7 @@ To create a prefab for your mod, head over to Assets/\<YourModNameFolder> and in
 {% step %}
 ### Authoring Components and adding them to prefabs
 
-Object Authoring - this component determines the Object ID of your item, whatever you set as the items' Object name will become its' Object ID. You can also select the type of Object Type you want it to be which might change its' behavior. Rarity can be set via the rarity drop-down. <mark style="color:red;">**What does variation do? clarify**</mark>
+Object Authoring - this component determines the Object ID of your item, whatever you set as the items' Object name will become its' Object ID. You can also select the type of Object Type you want it to be which might change its' behavior. Rarity can be set via the rarity drop-down.
 
 Inventory Item Authoring - this component will determine if your item is stackable in the players' inventory, what the sell value or buy value should be, the items' lootsprite, crafting settings, and more.
 
@@ -74,13 +74,9 @@ Cooldown Authoring - determines the cooldown of the item when used in Handheld i
 
 Gives Conditions When Equipped Authoring - this component determines what "stats" your item should have, as an example +5% crit chance, +40% melee attack speed, +9001% damage against bosses.&#x20;
 
-<mark style="color:red;">**Area Level Authoring - not exactly sure what this does**</mark>
-
-<mark style="color:red;">**Weapon Authoring - look at weapon authoring internally**</mark>
-
 Weapon Damage Authoring - here you can adjust the damage scaling for the item by modifying the damage multiplier, this is only relevant for weapons. Make sure that if you select magic/ranged that your object Type in Object Authoring also matches by using "Range Weapon" which counts for both Ranged and Magic weapons.&#x20;
 
-Localization Authoring - This will be the key to translate your item, which you'll need to match in your localization file. Core Keeper localization uses TSV format. <mark style="color:red;">**Provide an image example and more details on how to setup localization**</mark>
+Localization Authoring - This will be the key to translate your item, which you'll need to match in your localization file. Core Keeper localization uses TSV format.
 
 Secondary Use Authoring - Mostly relevant for tools and weapons, this can enable a weapon such as a sword to have a secondary on-use ability which'll by default be right click.&#x20;
 
