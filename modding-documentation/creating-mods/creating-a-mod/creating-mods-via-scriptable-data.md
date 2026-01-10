@@ -6,6 +6,8 @@ description: >-
 
 # Creating Mods via Scriptable Data
 
+### How to create new assets, and where to find games' assets
+
 All the Sprite Assets that are used in Core Keeper will be located at this path once you've updated the game assets:`Packages/dev.pugstorm.corekeeper.assets/Data/SpriteAsset`.&#x20;
 
 If you want to add new assets you can do so by adding a Scriptable Data Directory asset in your mods' folder and then opening up the Scriptable Data Editor Window and creating an asset of that type.
@@ -13,6 +15,10 @@ If you want to add new assets you can do so by adding a Scriptable Data Director
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 To create a new Sprite Asset you'd filter by Sprite Asset type in top Left (make sure your mods' Scriptable Data Directory is selected as well as that's where the Sprite Asset will be created) and clicking Add new Data Block. The same process can be repeated for other Asset Types such as Sprite Asset Skins, Gradient Maps and so on.
+
+### How to convert old Sprite Assets and Sprite Asset Skins from Scriptable Objects to ScriptableDataBlocks.
+
+create a Scriptable Data Directory assets via the create menu, and make sure your Sprite Assets are located in a sub-directory of where your Scriptable Data Directory asset is located, then open the asset in the Scriptable Data Editor Window.
 
 ## Step-by-step guide
 
