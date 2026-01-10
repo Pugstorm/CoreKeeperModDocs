@@ -8,7 +8,7 @@ you can upload mods to Steam Workshop, first you will need a Steam account and t
 
 Then heading over to the `Steam Workshop` tab once your mod has been built. In here you will first need to initialize Steam.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 By default if you click on `Initialize Steam` it will initialize Core Keepers' appID, if for some reason you are using a version of Core Keeper which uses a different appID then you can change it by clicking `Open Steam Config` . On the Steam Config there's also an option to enable auto-initialize so that every time you open up the Mod SDK Window it's initialized automatically.&#x20;
 

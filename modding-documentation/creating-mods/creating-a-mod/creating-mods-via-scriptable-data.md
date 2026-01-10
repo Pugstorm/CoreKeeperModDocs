@@ -6,6 +6,14 @@ description: >-
 
 # Creating Mods via Scriptable Data
 
+All the Sprite Assets that are used in Core Keeper will be located at this path once you've updated the game assets:`Packages/dev.pugstorm.corekeeper.assets/Data/SpriteAsset`.&#x20;
+
+If you want to add new assets you can do so by adding a Scriptable Data Directory asset in your mods' folder and then opening up the Scriptable Data Editor Window and creating an asset of that type.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+To create a new Sprite Asset you'd filter by Sprite Asset type in top Left (make sure your mods' Scriptable Data Directory is selected as well as that's where the Sprite Asset will be created) and clicking Add new Data Block. The same process can be repeated for other Asset Types such as Sprite Asset Skins, Gradient Maps and so on.
+
 ## Step-by-step guide
 
 {% stepper %}
@@ -42,7 +50,7 @@ Make sure the config is located in the right mod folder for which you want to bu
 
 ScriptableDataBlocks can be edited in the inspector by selecting the instance of that ScriptableDataBlock in your mods' folder, but it's easier and more convenient due to several QoL features to do so in the Scriptable Data Editor Window.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Simply make the changes that you'd like to make to the ScriptableDataBlock and then build the mod. The easiest way to test that you've set up everything correctly and that the Scriptable Data Block mods will work is to assign a new Gradient Map Data Block to a Sprite Asset.
 
