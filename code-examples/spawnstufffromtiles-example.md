@@ -13,15 +13,16 @@ using UnityEngine;
 using PugMod;
 using System;
 using PlayerEquipment;
+using PlayerState;
 
 public class SpawnStuffFromTiles : IMod
 {
-   /* 
-    * We have these flags and the entire script split into an IMod implementation and a Harmony patch because the API calls we use must run on Unitys' main thread.
-    * If we tried to run them in ECS which is where ShovelSlot.PlayDigEffects() runs, it would break.
-    * So the Harmony patch just detects when ShovelSlot.PlayDigEffects() has finished and sets a flag to true, 
-    * and then the Update() method which runs every frame on the main thread checks that flag and runs our logic.
-    */
+    /* 
+     * We have these flags and the entire script split into an IMod implementation and a Harmony patch because the API calls we use must run on Unitys' main thread.
+     * If we tried to run them in ECS which is where ShovelSlot.PlayDigEffects() runs, it would break.
+     * So the Harmony patch just detects when ShovelSlot.PlayDigEffects() has finished and sets a flag to true, 
+     * and then the Update() method which runs every frame on the main thread checks that flag and runs our logic.
+     */
     public static bool spawnObjectAndFX = false;
     public static float3 diggingPosition;
     private static Unity.Mathematics.Random random;
@@ -32,6 +33,10 @@ public class SpawnStuffFromTiles : IMod
 
     public void Init()
     {
+        // Right now needs to disable the system group including the system we want to change.
+        // Shouldn't be needed, will fix in future version.
+        BurstDisabler.DisableBurstForSystem<PlayerStateSystemGroup>();
+        BurstDisabler.DisableBurstForSystem<EquipmentUpdateSystem>();
     }
 
     public void ModObjectLoaded(UnityEngine.Object obj)
