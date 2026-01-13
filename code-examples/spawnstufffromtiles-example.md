@@ -128,22 +128,4 @@ public class SpawnObjectAndPlayFXAfterShoveling
         }
     }
 }
-
-
-        // Random number generating utility that is thread-safe, use this over Random.Range when working in ECS.
-        random = new Unity.Mathematics.Random((uint)DateTime.Now.Ticks);
-
-        // Roll 1-100 and if we roll above 50 then the Object gets spawned and SFX+VFX play.
-        if (random.NextInt(0, 100) < 50)
-        {
-            // Tile that's causing the effect to occur.
-            SpawnStuffFromTiles.diggingPosition = position;
-
-            // Tells Update that we're now meeting all the conditions to spawn the Object and play the SFX+VFX.
-            SpawnStuffFromTiles.spawnObjectAndFX = true;
-        }
-    }
-}
-
-
 ```
