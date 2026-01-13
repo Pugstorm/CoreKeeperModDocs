@@ -12,10 +12,40 @@ using Unity.Mathematics;
 using PugTilemap;
 using System;
 using PlayerEquipment;
+using PlayerState;
+using PugMod;
+using Unity.Entities;
+using Object = UnityEngine.Object;
 
+public class TeleportAfterEating : IMod
+{
+    public void EarlyInit()
+    {
+    }
+
+    public void Init()
+    {
+        // Right now needs to disable the system group including the system we want to change.
+        // Shouldn't be needed, will fix in future version.
+        BurstDisabler.DisableBurstForSystem<PlayerStateSystemGroup>();
+        BurstDisabler.DisableBurstForSystem<EquipmentUpdateSystem>();
+    }
+
+    public void Shutdown()
+    {
+    }
+
+    public void ModObjectLoaded(Object obj)
+    {
+    }
+
+    public void Update()
+    {
+    }
+}
 
 [HarmonyPatch(typeof(EatableSlot), "EatItem")]
-public class TeleportAfterEating
+public class TeleportAfterEatingPatch
 {
     private static Unity.Mathematics.Random random;
 
