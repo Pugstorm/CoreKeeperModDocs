@@ -52,7 +52,7 @@ The main restricted parts are:
 
 You can overcome these limitations by finding the Mod Builder Settings Scriptable Object instance in your Assets folder, it will be named after your mods' folder. Once you've located it, check **Skip Safety Checks** and **Accesses Extra Assemblies**. The downside of this is that your built mod will be marked with a tag informing mod users that these assemblies have skipped safety checks and may access other assemblies.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
