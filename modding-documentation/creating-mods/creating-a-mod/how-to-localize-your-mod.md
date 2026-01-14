@@ -34,8 +34,6 @@ Your item will now have an in-game title and description when viewed in the inve
 
 First, make sure that your .CSV files are separated as such. I find this to be the most convenient format however more formats are supported by selecting another Separator character when Importing Localization using the Scriptable Data Editor Window.&#x20;
 
-Any Localization Authoring components can also now be removed on your items.
-
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Once we've formatted our .CSV files to match the conventions, we can proceed to open the Scriptable Data Editor window and sort by the Scriptable Data Directory into which you want to add the TextDataBlock for localization as well as filter by Text, then click on the cogWheel and select "Import Localization".
