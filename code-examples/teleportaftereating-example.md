@@ -25,8 +25,13 @@ public class TeleportAfterEating : IMod
 
     public void Init()
     {
-        // Right now needs to disable the system group including the system we want to change.
-        // Shouldn't be needed, will fix in future version.
+        /*
+         * Right now DisableBurstForSystem doesn't work reliably for jobs since
+         * they might start outside of the OnUpdate call. This is a workaround
+         * which disables burst for the entire group the system runs in which
+         * typically gives the job enough time to start before burst is enabled
+         * again.
+         */
         BurstDisabler.DisableBurstForSystem<PlayerStateSystemGroup>();
         BurstDisabler.DisableBurstForSystem<EquipmentUpdateSystem>();
     }
@@ -41,6 +46,24 @@ public class TeleportAfterEating : IMod
 
     public void Update()
     {
+    }
+}
+
+/*
+ * This is another workaround for the problem with the job running with burst
+ * since it starts after OnUpdate. This slows down the game since we wait for
+ * all jobs to finish on the main thread, but more reliable since we
+ * always guarantee that the job has started before we enable burst again at
+ * the end of OnUpdate.
+ */
+[HarmonyPatch(typeof(EquipmentUpdateSystem), "OnUpdate")]
+public static class ForceJobCompletePatch
+{
+    [HarmonyPostfix]
+    [HarmonyPriority(Priority.High)] // Not needed for ISystem, but for SystemBase we want to make sure this runs before burst is enabled again
+    public static void Postfix(ref SystemState state)
+    {
+        state.Dependency.Complete();
     }
 }
 

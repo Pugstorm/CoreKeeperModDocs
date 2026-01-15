@@ -13,16 +13,16 @@ using UnityEngine;
 using PugMod;
 using System;
 using PlayerEquipment;
-using PlayerState;
+using Unity.Entities;
 
 public class SpawnStuffFromTiles : IMod
 {
-    /* 
-     * We have these flags and the entire script split into an IMod implementation and a Harmony patch because the API calls we use must run on Unitys' main thread.
-     * If we tried to run them in ECS which is where ShovelSlot.PlayDigEffects() runs, it would break.
-     * So the Harmony patch just detects when ShovelSlot.PlayDigEffects() has finished and sets a flag to true, 
-     * and then the Update() method which runs every frame on the main thread checks that flag and runs our logic.
-     */
+   /* 
+    * We have these flags and the entire script split into an IMod implementation and a Harmony patch because the API calls we use must run on Unitys' main thread.
+    * If we tried to run them in ECS which is where ShovelSlot.PlayDigEffects() runs, it would break.
+    * So the Harmony patch just detects when ShovelSlot.PlayDigEffects() has finished and sets a flag to true, 
+    * and then the Update() method which runs every frame on the main thread checks that flag and runs our logic.
+    */
     public static bool spawnObjectAndFX = false;
     public static float3 diggingPosition;
     private static Unity.Mathematics.Random random;
@@ -33,9 +33,6 @@ public class SpawnStuffFromTiles : IMod
 
     public void Init()
     {
-        // Right now needs to disable the system group including the system we want to change.
-        // Shouldn't be needed, will fix in future version.
-        BurstDisabler.DisableBurstForSystem<PlayerStateSystemGroup>();
         BurstDisabler.DisableBurstForSystem<EquipmentUpdateSystem>();
     }
 
@@ -76,7 +73,8 @@ public class SpawnStuffFromTiles : IMod
         }
 
         // Random number generating utility that is thread-safe, use this over Random.Range when working in ECS.
-        random = new Unity.Mathematics.Random((uint)DateTime.Now.Ticks);
+        // CreateFromIndex is needed when creating it from sequential values like index or time/ticks.
+        random = Unity.Mathematics.Random.CreateFromIndex((uint)DateTime.Now.Ticks);
 
         var playerPosition = player.transform.position;
         Vector3 FXPosition = new(playerPosition.x, 0.5f, playerPosition.z);
@@ -133,4 +131,21 @@ public class SpawnObjectAndPlayFXAfterShoveling
         }
     }
 }
+
+/*
+ * This is a workaround for the job running with burst since it starts after
+ * OnUpdate. This slows down the game since we wait for all jobs to finish on
+ * the main thread.
+ */
+[HarmonyPatch(typeof(EquipmentUpdateSystem), "OnUpdate")]
+public static class ForceJobCompletePatch
+{
+    [HarmonyPostfix]
+    [HarmonyPriority(Priority.High)] // Not needed for ISystem, but for SystemBase we want to make sure this runs before burst is enabled again
+    public static void Postfix(ref SystemState state)
+    {
+        state.Dependency.Complete();
+    }
+}
+
 ```
