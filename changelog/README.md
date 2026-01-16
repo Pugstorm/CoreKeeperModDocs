@@ -1,22 +1,6 @@
-# 1.2.0
+# Mod SDK changelog
 
-* UnityExtensions has moved to a new PugUnityExtensions package and Pug.UnityExtensions namespace.
-* PugProperties has moved to a new PugProperties package and Pug.Properties namespace.
-* TileMapLookup.GetBlockingTile and TileMapLookup.HasBlockingTile has been deprecated in favor of TileMapLookup.TryGetBlockingTile and will get removed in a future release.
-* PugAutomation namespace has been renamed to Pug.Automation.
-* PugElectricity namespace has been merged into Pug.Automation.
-* ElectricityCD is now part of the Pug.Automation namespace.
-* PugConversion has been extracted as a separate package. There are a few changes that may require you to update any existing converter code.
-* PugConversion namespace has been renamed to Pug.Conversion.
-* PugConverter and PugPostConverter have been renamed to Converter and PostConverter, respectively.
-* The ConditionsTable asset is no longer cached on each individual converter. Converters that need access to the conditions table should load and cache it themselves. See e.g. LevelEntitiesBufferConverter for an example.
-* Added BurstDisabler API to selectively disable burst compiler for specific systems. This is currently limited to disabling Burst for ISystem. We are working on extending this to work with Burst-compiled jobs as well. You may see some jobs running without Burst using this API currently, but results are inconsistent.
-* Core Keeper now uses ScriptableDataBlocks which are just like Scriptable Objects but hold an address synced to the assets' GUID.
-* Gradient Maps are now stored as a texture array inside of GradientMapDataBlocks.
-* SpriteAssets are now SpriteAssetDataBlocks.
-* SpriteAssetSkins are now SpriteAssetSkinDataBlocks.
-* PlayerCustomizationTable is now PlayerCustomizationTableDataBlock.
-* Sprite Objects now reference SpriteAssetDataBlocks and GradientMapDataBlocks.
-* Mods can now be loaded from Steam Workshop as well.
-* Localization now works through the TextDataBlock system, to add or change in-game text you will need to create a new TextDataBlock instead of a Localization.csv file.
-* A majority of the ModSDK has been moved from assets into a PugMod package.
+This is the changelog for the Core Keeper Mod SDK. It will contain changes to the SDK itself as well as internal changes to the project that isn’t covered in the regular changelog.
+
+\
+It is still very much recommended to also read what is in the changelog for the Core Keeper application on Steam: [https://store.steampowered.com/news/app/1621690?updates=true](https://store.steampowered.com/news/app/1621690?updates=true)
