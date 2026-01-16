@@ -1,10 +1,4 @@
----
-description: >-
-  These are the primary changes happening from patch 1.1.2.9 going into patch
-  1.2
----
-
-# Patch 1.2.0
+# 1.2.0
 
 * UnityExtensions has moved to a new PugUnityExtensions package and Pug.UnityExtensions namespace.
 * PugProperties has moved to a new PugProperties package and Pug.Properties namespace.
