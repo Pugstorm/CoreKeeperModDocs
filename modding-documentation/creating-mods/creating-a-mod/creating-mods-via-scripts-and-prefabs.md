@@ -76,7 +76,7 @@ Gives Conditions When Equipped Authoring - this component determines what "stats
 
 Weapon Damage Authoring - here you can adjust the damage scaling for the item by modifying the damage multiplier, this is only relevant for weapons. Make sure that if you select magic/ranged that your object Type in Object Authoring also matches by using "Range Weapon" which counts for both Ranged and Magic weapons.&#x20;
 
-Localization Authoring - This will be the key to translate your item, which you'll need to match in your localization file. Core Keeper localization uses TSV format.
+Localization Authoring - This will be the key to translate your item, which you'll need to match in your localization file. Core Keeper localization uses TextDataBlocks.
 
 Secondary Use Authoring - Mostly relevant for tools and weapons, this can enable a weapon such as a sword to have a secondary on-use ability which'll by default be right click.&#x20;
 
