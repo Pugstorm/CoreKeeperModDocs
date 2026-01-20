@@ -12,13 +12,13 @@ description: >-
 {% step %}
 ### Creating a mod base
 
-Head over to the PugMod window in Unity, and select "Open Mod SDK Window". Then head over to the Mod Settings tab, and select "New Mod", afterwards name your mod and press Create. This will generate a mod folder including a scriptable object containing the mods' build settings under the `Assets/<YourModNameFolder>` path. An assembly will also be generated which'll reference all of the games' assemblies that you've fetched by updating game files, this is nothing very useful for now but good to know in the future in case you run into outdated assembly issues.
+Head over to the PugMod window in Unity, and select "Open Mod SDK Window". Then head over to the Mod Settings tab, and select "New Mod", afterwards name your mod and press Create. This will generate a mod folder including a scriptable object containing the mods' build settings under the `Assets\<YourModNameFolder>` path. An assembly will also be generated which'll reference all of the games' assemblies that you've fetched by updating game files, this is nothing very useful for now but good to know in the future in case you run into outdated assembly issues.
 {% endstep %}
 
 {% step %}
 ### Creating a script&#x20;
 
-To create a script for your mod, head over to Assets/\<YourModNameFolder> and inside of it right click, then select Create -> C# Script. This will cause Unity to recompile and is expected. Once you've made a script you can double click it in Unity and that'll open it using your default text editor. Inside the script you will be expected to inherit and implement the IMod interface, you don't have to do this for every script in your mods' folder, just the one that you want to do something special whenever your mod is loaded/updated/etc.&#x20;
+To create a script for your mod, head over to `Assets\<YourModNameFolder>` and inside of it right click, then select Create -> C# Script. This will cause Unity to recompile and is expected. Once you've made a script you can double click it in Unity and that'll open it using your default text editor. Inside the script you will be expected to inherit and implement the IMod interface, you don't have to do this for every script in your mods' folder, just the one that you want to do something special whenever your mod is loaded/updated/etc.&#x20;
 {% endstep %}
 
 {% step %}
