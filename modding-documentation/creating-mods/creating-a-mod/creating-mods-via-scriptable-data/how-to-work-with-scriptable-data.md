@@ -95,53 +95,55 @@ A Scriptable Data Directory will be automatically created for you whenever you c
 
 <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-### Scriptable Data Block types
-
-A Scriptable Data Block type is a class which inherits from ScriptableDataBlock.&#x20;
-
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
 ### Overloading Scriptable Data Blocks
 
 To overload a data block, you must first import game assets via the ModSDKWindow, once you've done that you should open the Scriptable Data Editor Window and select the Core Keeper Assets (readonly) directory. Then, find the Data Block you'd like to overload.
 
 <figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-
+### Scriptable Data Block types which support Modding
 
 #### Ground Fog
 
-can be used to generate fog around certain block types.
-
-#### Sprite Asset
-
-stores a texture which can also be animated if it contains multiple frames. Can be recolored by referencing a Gradient Map.
-
-#### Sprite Asset Skin
-
-references a Sprite Asset and can act as a variation of that Sprite Asset by effectively reskinning it.
+Can be used to generate fog around certain block types.
 
 #### Gradient Map
 
-recolors&#x20;
+Recolors existing Sprite Assets and Sprite Asset Skins by reference.
+
+#### Sprite Asset
+
+Stores a texture which can also be animated if it contains multiple frames. Can be recolored by referencing a Gradient Map.
+
+#### Sprite Asset Skin
+
+References a Sprite Asset and can act as a variation of that Sprite Asset by effectively reskinning it.
 
 #### Text
 
-used for localization and general display of text in-game or menus.
+Used for localization and general display of text in-game or menus.
 
 #### Player Customization Table
 
-acts as the source for all player customization references.
+Acts as the source for all player customization references.
 
-### Scriptable Data Collections
+#### Source Color
+
+Targets the colors' of the players' default texture colors to replace with replacement colors.
 
 #### Skin Base
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+SkinBase is the collection that has the following ScriptableDataBlocks inheriting from it:
 
-#### Collection
-
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+* BodySkin
+* EyesSkin
+* HairSkin
+* PantsSkin
+* ShirtSkin
+* ReplacementColor
+* HelmSkin
+* BreastArmorSkin
+* PantsArmorSkin
 
 
 
