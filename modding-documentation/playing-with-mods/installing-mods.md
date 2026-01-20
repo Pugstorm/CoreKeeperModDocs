@@ -2,7 +2,7 @@
 
 ## Steam Workshop
 
-To install mods for Core Keeper using Steam Workshop first you should head over to Core Keepers' Steam Workshop page. Here you can find a list of all the mods that have been uploaded to Steam Workshop, in order to install a mod simply subscribe to it and restart your game. The installed mod will go to `steamapps/workshop/content/`, followed by a subfolder with the game's ID, and then a subfolder for each mod, named after its Workshop ID.&#x20;
+To install mods for Core Keeper using Steam Workshop first you should head over to Core Keepers' Steam Workshop page. Here you can find a list of all the mods that have been uploaded to Steam Workshop, in order to install a mod simply subscribe to it and restart your game. The installed mod will go to `steamapps\workshop\content\`, followed by a subfolder with the game's ID, and then a subfolder for each mod, named after its Workshop ID.&#x20;
 
 A common default location is `C:\Program Files (x86)\Steam\steamapps\workshop\content`&#x20;
 

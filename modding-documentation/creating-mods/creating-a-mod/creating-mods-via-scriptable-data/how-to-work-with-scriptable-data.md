@@ -101,6 +101,10 @@ stores a texture which can also be animated if it contains multiple frames. Can 
 
 references a Sprite Asset and can act as a variation of that Sprite Asset by effectively reskinning it.
 
+#### Gradient Map
+
+recolors&#x20;
+
 #### Text
 
 used for localization and general display of text in-game or menus.
