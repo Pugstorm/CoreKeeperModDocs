@@ -97,9 +97,21 @@ A Scriptable Data Directory will be automatically created for you whenever you c
 
 ### Overloading Scriptable Data Blocks
 
-To overload a data block, you must first import game assets via the ModSDKWindow, once you've done that you should open the Scriptable Data Editor Window and select the Core Keeper Assets (readonly) directory. Then, find the Data Block you'd like to overload.
+To overload a data block, you must first import game assets via the ModSDKWindow, once you've done that you should open the Scriptable Data Editor Window and select the Core Keeper Assets (readonly) directory.&#x20;
 
 <figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+Then, find the Data Block you'd like to overload. Once you've found the DataBlock that you'd like to overload, right click it and select `Overload` > `YourModsDirectory` .&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
+This will create a copy of the same Data Block in a sub-folder of where that Scriptable Data Directory asset is created, but generate a different address.
+
+You can now sort by your Scriptable Data Directory to find the newly made Data Block.
+
+{% hint style="danger" %}
+We're working on making imported game assets have the same GUID every time they're imported, for the time being please beware that if you import the assets again it will lead to missing reference issues.
+{% endhint %}
 
 ### Scriptable Data Block types which support Modding
 
