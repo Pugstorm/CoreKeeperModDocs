@@ -21,8 +21,6 @@ Data block types must inherit from `ScriptableDataBlock`, which itself inherits 
 
 Everything that works with ScriptableObjects also works with data block types, with one exception: you should not use direct references to data blocks. Instead, use `DataBlockRef<T>` where `T` is your data block type. A data block ref uses an address (`Guid`) to "softly" refer to a data block. At runtime, the address is used to "get" the data block from the runtime lookup. This is why the system supports modding inherently: as long as a data block with the same address as another is loaded after it, _it will override it_. This allows modders to "replace" our data blocks with their own.
 
-Due to how data blocks are modded via overriding rather than alteration, it is a good idea to _make the overall data structure quite granular_, or in other words _avoid putting too many data fields in single data block types_. In many cases, this also promotes data reuse and leads to overall better design.
-
 ### DataBlockAddress
 
 <figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
