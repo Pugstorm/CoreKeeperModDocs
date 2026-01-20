@@ -9,7 +9,7 @@ description: >-
 
 ### TextDataBlock
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 A `TextDataBlock` can define two strings: a title and a description. Both are optional, as long as the other is provided (meaning you can have a `TextDataBlock` with just a title or just a description).
 
@@ -34,19 +34,19 @@ Your item will now have an in-game title and description when viewed in the inve
 
 First, make sure that your .CSV files are separated as such. I find this to be the most convenient format however more formats are supported by selecting another Separator character when Importing Localization using the Scriptable Data Editor Window.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once we've formatted our .CSV files to match the conventions, we can proceed to open the Scriptable Data Editor window and sort by the Scriptable Data Directory into which you want to add the TextDataBlock for localization as well as filter by Text, then click on the cogWheel and select "Import Localization".
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Here you must check "Missing Data Blocks" and "Overwrite Primary Language" and then choose your Separator Character, we will use | in this example as that's what we use to separate entries in our .CSV file above, then select the path to your .CSV file. Make sure your .CSV file is closed or it will throw an error.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once you've selected your .CSV file, press Import to create a new TextDataBlock using information from the file.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
