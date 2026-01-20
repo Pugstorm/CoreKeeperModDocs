@@ -107,7 +107,9 @@ Then, find the Data Block you'd like to overload. Once you've found the DataBloc
 
 This will create a copy of the same Data Block in a sub-folder of where that Scriptable Data Directory asset is created, but generate a different address. The copy overrides the original Data Block that it is overloading by targeting its' address.
 
-You can now sort by your Scriptable Data Directory to find the newly made Data Block.
+You can now sort by your Scriptable Data Directory to find the newly made Data Block. If you'd like for this to be merely a copy of the Scriptable Data Block and to be a new Data Block you can simply remove the referenced overload.
+
+<figure><img src="../../../.gitbook/assets/c401df5663b0d3c71bb189baa019f5d5.gif" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 We're working on making imported game assets have the same GUID every time they're imported, for the time being please beware that if you import the assets again it will lead to missing reference issues.
