@@ -25,7 +25,9 @@ Due to how data blocks are modded via overriding rather than alteration, it is a
 
 ### DataBlockAddress
 
-A `DataBlockAddress` is a wrapper around `System.Guid` and is used to identify and refer to a data block. In the editor, the address is automatically synced to the asset `GUID`, but it can be set manually by clicking the "Address" label. This can be used by modders to override data blocks.
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+A `DataBlockAddress` is a wrapper around `System.Guid` and is used to identify and refer to a data block. In the editor, the address is automatically synced to the asset `GUID` .
 
 ### DataBlockRef
 
@@ -57,13 +59,25 @@ A `DataBlockAddress` is also implicitly convertable to a `DataBlockRef`, which c
 enemyDataRef = someEnemyDataBlock.address;
 ```
 
-#### DataBlockCollection
+### DataBlockCollection
 
 A `DataBlockCollection` is a data block type that wraps around a collection of `DataBlockRefs`, but crucially, it uses a _two-way reference system_, which allows data blocks _themselves_ to reference the collection as a way to be included, _without actually modifying it_.&#x20;
 
 A data block that is included on the collection itself is referred to as a static reference, whereas a data block that is included by pointing to the collection is referred to as a dynamic reference.&#x20;
 
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+
+This for example is how Static entries will look like in the Scriptable Data Editor.
+
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+
+Whereas Dynamic entries will need to be added by going to the Data Block that you'd like to add to the collection and then checking the checkmark under Collections.
+
+<figure><img src="../../../.gitbook/assets/collections.png" alt=""><figcaption></figcaption></figure>
+
 At runtime, static and dynamic references are merged into a single list, which is what is used when accessing the collection.
+
+Scriptable Data Blocks should only add to the collections that they belong in, for example a HairSkinDataBlock shouldn't be added to the BodySkinsCollection.&#x20;
 
 ### Scriptable Data Editor Window
 
@@ -88,6 +102,14 @@ A Scriptable Data Directory will be automatically created for you whenever you c
 A Scriptable Data Block type is a class which inherits from ScriptableDataBlock.&#x20;
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+### Overloading Scriptable Data Blocks
+
+To overload a data block, you must first import game assets via the ModSDKWindow, once you've done that you should open the Scriptable Data Editor Window and select the Core Keeper Assets (readonly) directory. Then, find the Data Block you'd like to overload.
+
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+
 
 #### Ground Fog
 
