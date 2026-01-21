@@ -9,7 +9,7 @@ description: this page details how to work with scriptable data and what it offe
 * A persistent data editor with tabs, categorization, search bar, favorites, selection history, custom utility functions, and more!
 * A friction-free experience for adding new data types: all you need to do is inherit from `ScriptableDataBlock` and your new type shows up in the editor automatically, ready to start using!
 * Automatic management of asset files through drag-and-drop in the editor and collapsable headers.
-* Runtime lists of loaded data blocks, with built-in network ID.
+* Runtime lists of loaded data blocks.
 * Inherent mod support through soft references and address overloading.
 * Export/importable editor state for workspace configuration or transfer.
 
