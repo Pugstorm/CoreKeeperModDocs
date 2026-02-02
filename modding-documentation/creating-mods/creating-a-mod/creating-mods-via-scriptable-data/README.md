@@ -6,6 +6,12 @@ description: >-
 
 # Creating Mods via Scriptable Data
 
+### Scriptable Data Editor Window
+
+You can discover the Scriptable Data Editor by going to `Window` > `Scriptable Data Editor` .
+
+<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
 ### How to create new assets, and where to find games' assets
 
 All the Sprite Assets that are used in Core Keeper will be located at this path once you've updated the game assets:`Packages/dev.pugstorm.corekeeper.assets/Data/SpriteAsset`.&#x20;
