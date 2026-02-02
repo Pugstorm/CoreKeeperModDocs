@@ -13,6 +13,12 @@ description: this page details how to work with scriptable data and what it offe
 * Inherent mod support through soft references and address overloading.
 * Export/importable editor state for workspace configuration or transfer.
 
+### Scriptable Data Editor Window
+
+You can discover the Scriptable Data Editor by going to `Window` > `Scriptable Data Editor` .
+
+<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+
 ### Scriptable Data Block
 
 A data block represents a _piece of data_, or an _instance of a data type_. You might for example have an `EnemyDataBlock` type, and several data blocks of that type, like forestGoblin, desertGoblin, forestBird etc.
@@ -76,12 +82,6 @@ Whereas Dynamic entries will need to be added by going to the Data Block that yo
 At runtime, static and dynamic references are merged into a single list, which is what is used when accessing the collection.
 
 Scriptable Data Blocks should only add to the collections that they belong in, for example a HairSkinDataBlock shouldn't be added to the BodySkinsCollection.&#x20;
-
-### Scriptable Data Editor Window
-
-You can discover the Scriptable Data Editor by going to `Window` > `Scriptable Data Editor` .
-
-<figure><img src="../../../.gitbook/assets/scriptableDataEditorWindow.png" alt=""><figcaption></figcaption></figure>
 
 ### Scriptable Data Directories
 
