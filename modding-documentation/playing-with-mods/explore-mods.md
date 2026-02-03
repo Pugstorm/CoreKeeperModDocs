@@ -2,7 +2,7 @@
 
 Core Keeper mods can be found on either Steam Workshop or Mod.IO.&#x20;
 
-Until Steam Workshop launches officially you can expect Steam Workshop to be missing some mods which may exist on Mod.IO.&#x20;
+note that Steam Workshop is in beta and it is expected that it will be missing some mods which may exist on Mod.IO.&#x20;
 
 ## Core Keeper Mods on Steam Workshop
 
