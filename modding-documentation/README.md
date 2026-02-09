@@ -1,7 +1,7 @@
 ---
 description: >-
-  This page will walk you through how to set up the ModSDK unity project and how
-  to install.
+  This page will walk you through how to set up unity and install the ModSDK
+  unity project.
 ---
 
 # Setting up the Modding Environment
