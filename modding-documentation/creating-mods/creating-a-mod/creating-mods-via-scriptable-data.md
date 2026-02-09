@@ -8,7 +8,7 @@ description: >-
 
 ### Scriptable Data Editor Window
 
-You can discover the Scriptable Data Editor by going to `Window` > `Scriptable Data Editor` .
+You can discover the Scriptable Data Editor by going to `Window > Scriptable Data Editor`.
 
 <figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
