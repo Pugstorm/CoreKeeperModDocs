@@ -30,4 +30,4 @@ If you'd like to see what your Gradient Map changes will look like, you can go b
 
 <figure><img src=".gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-you can now see how your recolor will affect the sprite.
+You can now see how your recolor will affect the sprite.

@@ -1,3 +1,10 @@
+---
+description: >-
+  The System Example showcases how to make a client-side system, as well as a
+  server-side system. Client-side acts on only your player, whereas server-side
+  acts on all players.
+---
+
 # System Example
 
 ```csharp
