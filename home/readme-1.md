@@ -4,21 +4,15 @@ icon: list-check
 
 # Getting Started (Short)
 
-## Please Read
-
 {% hint style="warning" %}
 The modding tools and Steam Workshop integration are currently in beta. Find out more [here](info-and-news.md)!
 {% endhint %}
-
-## Welcome
 
 You can find everything you need to create and share mods, plus SDK updates and code examples to get started in this documentation.
 
 Need help or want to connect with other modders? Join our [Official Discord](https://discord.gg/CoreKeeper).
 
 Got feedback, ideas, or found something broken? Let us know—your input helps improve the SDK and the modding community. Head on over to our [Discord's](https://discord.gg/CoreKeeper) modding channel for this.
-
-## Where to Start
 
 The main two places for getting started are:
 
