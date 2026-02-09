@@ -3,7 +3,7 @@
 ## Creating Mods
 
 * [Setting up the Modding Environment](README.md)
-  * [Updating Game Assets](creating-mods/setting-up-the-modding-environment/updating-game-assets.md)
+  * [Extracting Game Assets](creating-mods/setting-up-the-modding-environment/extracting-game-assets.md)
   * [Updating Game Files](creating-mods/setting-up-the-modding-environment/updating-game-files.md)
 * [Creating a Mod](creating-mods/creating-a-mod/README.md)
   * [Creating Mods via Scriptable Data](creating-mods/creating-a-mod/creating-mods-via-scriptable-data.md)

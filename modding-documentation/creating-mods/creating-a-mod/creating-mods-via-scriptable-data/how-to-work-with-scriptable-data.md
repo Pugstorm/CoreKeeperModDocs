@@ -1,5 +1,5 @@
 ---
-description: this page details how to work with scriptable data and what it offers.
+description: This page details how to work with scriptable data and what it offers.
 ---
 
 # How to work with Scriptable Data
@@ -50,7 +50,7 @@ if (enemyDataRef.TryGet(out EnemyDataBlock enemyData))
 }
 ```
 
-or simply (if you know the field must be valid):
+Or simply (if you know the field must be valid):
 
 ```
 EnemyDataBlock enemyData = enemyDataRef.Get();
@@ -89,11 +89,11 @@ Scriptable data directories point to where your Scriptable Data Blocks will be l
 
 As an example if I have the BurstDisable Scriptable Data Directory selected and choose to add a new data block then it'll be created in a sub-folder of where that directory is located.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 A Scriptable Data Directory will be automatically created for you whenever you create a new mod via the ModSDKWindow, however for mods that were made before this update you'll have to create it manually via the Create menu, you can do so by right clicking in the folder you want to create it in and selecting `Create > Scriptable Data > Additional Data Directory` .
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Overloading Scriptable Data Blocks
 

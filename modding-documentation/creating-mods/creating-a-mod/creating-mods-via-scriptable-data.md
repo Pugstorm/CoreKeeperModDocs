@@ -1,6 +1,6 @@
 ---
 description: >-
-  this page aims to guide the user through the workflow of getting started with
+  This page aims to guide the user through the workflow of getting started with
   scriptable data mods as well as provide tips and tricks.
 ---
 

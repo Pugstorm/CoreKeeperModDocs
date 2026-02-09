@@ -1,3 +1,9 @@
+---
+description: >-
+  This page explains how you can import the AssetRipper export into the ModSDK
+  unity project.
+---
+
 # Updating Game Files
 
 You can update your game files by going to the PugMod menu in the Unity Editor and selecting "Open Mod SDK Window", a window will pop up.&#x20;

@@ -1,6 +1,6 @@
 ---
 description: >-
-  this page aims to provide all necessary resources to get started with making
+  This page aims to provide all necessary resources to get started with making
   mods using scripts and prefabs.
 ---
 
@@ -12,7 +12,7 @@ description: >-
 {% step %}
 ### Creating a mod base
 
-Head over to the PugMod window in Unity, and select "Open Mod SDK Window". Then head over to the Mod Settings tab, and select "New Mod", afterwards name your mod and press Create. This will generate a mod folder including a scriptable object containing the mods' build settings under the `Assets\<YourModNameFolder>` path. An assembly will also be generated which'll reference all of the games' assemblies that you've fetched by updating game files, this is nothing very useful for now but good to know in the future in case you run into outdated assembly issues.
+Head over to the PugMod window in Unity and select "Open Mod SDK Window". Then head over to the Mod Settings tab and select "New Mod". Afterwards name your mod and press "Create". This will generate a mod folder including a scriptable object containing the mods' build settings under the `Assets\<YourModNameFolder>` path. An assembly will also be generated which'll reference all of the games' assemblies that you've fetched by updating game files, this is nothing very useful for now but good to know in the future in case you run into outdated assembly issues.
 {% endstep %}
 
 {% step %}

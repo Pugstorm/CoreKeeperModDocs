@@ -1,3 +1,9 @@
+---
+description: >-
+  Here are some helpful (and possibly required) modding tools to help your
+  modding journey.
+---
+
 # Useful Modding Tools
 
 {% stepper %}
@@ -10,13 +16,13 @@ We use Asset Ripper to extract Core Keepers' game assets such as Scriptable Obje
 {% step %}
 ### NG Tools Missing Script Recovery
 
-Sometimes an asset like a Prefab or a Scriptable Object will lose a reference to its' script, this can happen for a lot of reasons, this tool will help you find and re-serialize the right script onto those assets. You can find more about the tool and download it [here](https://assetstore.unity.com/packages/tools/utilities/ng-missing-script-recovery-102272?srsltid=AfmBOopHKbzOpjYtVBDvxCowGgiCVHKI7qGIuoIJvyqgJ9Rl2QgmneKg).
+Sometimes an asset like a Prefab or a Scriptable Object will lose a reference to its script, this can happen for a lot of reasons, this tool will help you find and re-serialize the right script onto those assets. You can find more about the tool and download it [here](https://assetstore.unity.com/packages/tools/utilities/ng-missing-script-recovery-102272?srsltid=AfmBOopHKbzOpjYtVBDvxCowGgiCVHKI7qGIuoIJvyqgJ9Rl2QgmneKg).
 {% endstep %}
 
 {% step %}
 ### UnityExplorer
 
-an in-game UI tool for modders to find scenes, sprites, and much more. You can read more in-depth about the tool [here](https://thunderstore.io/c/boneworks/p/sinai-dev/UnityExplorer_IL2CPP_ML/) as well as manually install it.
+An in-game UI tool for modders to find scenes, sprites, and much more. You can read more in-depth about the tool [here](https://thunderstore.io/c/boneworks/p/sinai-dev/UnityExplorer_IL2CPP_ML/) as well as manually install it.
 {% endstep %}
 
 {% step %}
