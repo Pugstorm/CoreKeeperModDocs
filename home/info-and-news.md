@@ -4,12 +4,18 @@ icon: calendar-check
 
 # Info and News
 
-The modding SDK update is currently in a closed beta for Pugstorm Ambassadors. To join the ambassador program, please head on over to our Discord to and check out the channel `#🥇ambassador-applications` for instructions on how to join. As a mod creator, please specifically mention that you are interested in creating mods and include links to your previous work. Other games are totally fine to include here as well.
+The modding SDK update is currently in an opt-in beta for the public. To join the beta please head on over to [this steam group](https://steamcommunity.com/groups/ckworkshopbeta) and join by pressing the green "Join Group" button.
 
-If approved, you will receive detailed instructions on how to join the ambassador program and how to access everything for the mod sdk.
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-After the closed beta, we'll most likely follow up with an opt-in open beta for the wider community until we feel it's ready to release to everyone.
+Once joined you will be able to access the Workshop through the [Community Hub page](https://steamcommunity.com/app/1621690/workshop/) on Steam. There might be an issue accessing the "Home" page of the documentation due to the workshop not being fully public. If so, please use [this](https://steamcommunity.com/workshop/browse/?appid=1621690\&browsesort=trend\&section=readytouseitems) link.
+
+To get the latest version of the modding sdk, please download or clone the [Official Repo](https://github.com/Pugstorm/corekeepermodsdk). You can find the installation instructions [here](https://app.gitbook.com/s/PzJZ32C4y5NoFuxrd1BA/creating-mods/setting-up-the-modding-environment).
+
+
+
+If you have any questions regarding the mod sdk, you can head on over to the modding channel in the [Official Discord](https://discord.gg/corekeeper) and we'll try to help.
 
 {% hint style="warning" %}
-Beta means that things may break, so please be aware
+Beta means that things may break, so please be aware!
 {% endhint %}
