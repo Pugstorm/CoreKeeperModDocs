@@ -1,6 +1,6 @@
 ---
 description: >-
-  this page explains how you can give an item an inventory name and a
+  This page explains how you can give an item an inventory name and a
   description as well as localize it to other languages when the games' language
   is changed.
 ---

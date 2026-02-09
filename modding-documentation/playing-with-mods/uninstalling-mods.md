@@ -1,6 +1,6 @@
 # Uninstalling Mods
 
-## Steam Workshop
+## Mods on Steam Workshop
 
 Mods downloaded through Steam Workshop will be downloaded to: `SteamLibrary\steamapps\workshop\content\1621690\`
 
@@ -15,10 +15,10 @@ Here you can view all installed mods and unsubscribe from them individually or f
 
 In case you'd like to unsubscribe from a specific mod, please search for it in the Workshop and uninstall from there.
 
-## Mod.io
+## Mods on mod.io
 
 Mods downloaded through mod.io will be downloaded to this directory:\
-`C:\Users\Public\mod.io\GAME ID\mods\`<br>
+`C:\Users\Public\mod.io\5289\mods\`<br>
 
 {% hint style="warning" %}
 Similarly to Steam Workshop, it is not recommended to uninstall them directly as that might cause issues.

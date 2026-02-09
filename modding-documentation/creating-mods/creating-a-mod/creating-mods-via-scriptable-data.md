@@ -14,7 +14,7 @@ You can discover the Scriptable Data Editor by going to `Window` > `Scriptable D
 
 ### How to create new assets, and where to find games' assets
 
-All the Sprite Assets that are used in Core Keeper will be located at this path once you've updated the game assets:`Packages/dev.pugstorm.corekeeper.assets/Data/SpriteAsset`.&#x20;
+All the Sprite Assets that are used in Core Keeper will be located at this path once you've updated the game assets: `Packages/dev.pugstorm.corekeeper.assets/Data/SpriteAsset`.&#x20;
 
 If you want to add new assets you can do so by adding a Scriptable Data Directory asset in your mods' folder and then opening up the Scriptable Data Editor Window and creating an asset of that type.
 
@@ -24,7 +24,7 @@ To create a new Sprite Asset you'd filter by Sprite Asset type in top Left (make
 
 ### How to convert old Sprite Assets and Sprite Asset Skins from Scriptable Objects to ScriptableDataBlocks.
 
-create a Scriptable Data Directory assets via the create menu, and make sure your Sprite Assets are located in a sub-directory of where your Scriptable Data Directory asset is located, then open the asset in the Scriptable Data Editor Window.
+Create a Scriptable Data Directory assets via the create menu, and make sure your Sprite Assets are located in a sub-directory of where your Scriptable Data Directory asset is located, then open the asset in the Scriptable Data Editor Window.
 
 ## Step-by-step guide
 
@@ -42,7 +42,7 @@ To mod a ScriptableDataBlock you will first need to make sure that you have a Sc
 
 <figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-If your mod is older then you can simply do this by heading over to your mods' folder and then generating the asset by going to the Assets window, and selecting Create -> Scriptable Data -> Additional Data Directory. This will generate the required asset. Make sure it's in the mod folder in which you want to mod Scriptable Data Blocks!
+If your mod is older then you can simply do this by heading over to your mods' folder and then generating the asset by going to the Assets window, and selecting `Create -> Scriptable Data -> Additional Data Directory`. This will generate the required asset. Make sure it's in the mod folder in which you want to mod Scriptable Data Blocks!
 
 <figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
@@ -50,7 +50,7 @@ If your mod is older then you can simply do this by heading over to your mods' f
 {% step %}
 ### Choosing a ScriptableDataBlock to mod
 
-Open up the Scriptable Data Editor Window by going to Window -> Scriptable Data Editor once it's open you'll see a dropdown for ScriptableDataBlock types, these types are retrieved from the assemblies that are imported into the ModSDK during the "Updating Game Files" step. Once you've picked a ScriptableDataBlock which you think would be fun to mod you can right click it on the left-hand side in the Scriptable Data Editor Window and click Overload to -> \<YourScriptableDataDirectoryConfig>.&#x20;
+Open up the Scriptable Data Editor Window by going to `Window -> Scriptable Data Editor` once it's open you'll see a dropdown for ScriptableDataBlock types, these types are retrieved from the assemblies that are imported into the ModSDK during the "Updating Game Files" step. Once you've picked a ScriptableDataBlock which you think would be fun to mod you can right click it on the left-hand side in the Scriptable Data Editor Window and click Overload to -> \<YourScriptableDataDirectoryConfig>.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

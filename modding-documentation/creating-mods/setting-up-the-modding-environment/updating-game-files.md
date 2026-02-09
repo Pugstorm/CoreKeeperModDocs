@@ -1,6 +1,6 @@
 # Updating Game Files
 
-you can do so by going to the PugMod menu in the Unity Editor and selecting "Open Mod SDK Window", a window will pop up.&#x20;
+You can update your game files by going to the PugMod menu in the Unity Editor and selecting "Open Mod SDK Window", a window will pop up.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

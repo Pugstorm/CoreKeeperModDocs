@@ -18,7 +18,7 @@ Head over to the PugMod window in Unity, and select "Open Mod SDK Window". Then 
 {% step %}
 ### Creating a script&#x20;
 
-To create a script for your mod, head over to `Assets\<YourModNameFolder>` and inside of it right click, then select Create -> C# Script. This will cause Unity to recompile and is expected. Once you've made a script you can double click it in Unity and that'll open it using your default text editor. Inside the script you will be expected to inherit and implement the IMod interface, you don't have to do this for every script in your mods' folder, just the one that you want to do something special whenever your mod is loaded/updated/etc.&#x20;
+To create a script for your mod, head over to `Assets\<YourModNameFolder>` and inside of it right click, then select `Create -> C# Script`. This will cause Unity to recompile and is expected. Once you've made a script you can double click it in Unity and that'll open it using your default text editor. Inside the script you will be expected to inherit and implement the IMod interface, you don't have to do this for every script in your mods' folder, just the one that you want to do something special whenever your mod is loaded/updated/etc.&#x20;
 {% endstep %}
 
 {% step %}
@@ -58,7 +58,7 @@ You can overcome these limitations by finding the Mod Builder Settings Scriptabl
 {% step %}
 ### Creating a prefab
 
-To create a prefab for your mod, head over to Assets/\<YourModNameFolder> and inside of it right click, then select Create -> Prefab. The most common purpose if a prefab is to implement components that will determine how an item for example behaves in-game. Think of it as a data container. There are different types of authoring components that you can add to your prefab, but here are the most common ones that you'd want to add to for example make a mod which adds a new Sword.
+To create a prefab for your mod, head over to `Assets/<YourModNameFolder>` and inside of it right click, then select `Create -> Prefab`. The most common purpose if a prefab is to implement components that will determine how an item for example behaves in-game. Think of it as a data container. There are different types of authoring components that you can add to your prefab, but here are the most common ones that you'd want to add to for example make a mod which adds a new Sword.
 {% endstep %}
 
 {% step %}

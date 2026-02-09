@@ -2,13 +2,13 @@
 
 ## Setting up Asset Ripper
 
-In order to set up Asset Ripper you have to first download it here for your corresponding platform - [https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1](https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1) . The version must be 1.2.1. You may pick any of the .zip folders that are compatible with your System, for most users this will be `AssetRipper_win_x64.zip` .
+In order to set up Asset Ripper you have to first download it here for your corresponding platform - [https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1](https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1). The version _must be 1.2.1_. You may pick any of the .zip folders that are compatible with your System, for most users this will be `AssetRipper_win_x64.zip` .
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Exporting the Game Assets
 
-this section requires Asset Ripper, if you've not yet set up Asset Ripper then do that first. Once you have Asset Ripper set up open it and select `File` > `Open Folder` .&#x20;
+this section requires Asset Ripper, if you've not yet set up Asset Ripper then do that first. Once you have Asset Ripper set up open it and select `File` > `Open Folder`.&#x20;
 
 <figure><img src="../../.gitbook/assets/bd28bd803da42fc5e7b709301511ce14.png" alt=""><figcaption></figcaption></figure>
 
