@@ -1,3 +1,9 @@
+---
+description: >-
+  The RPC Example showcases how to make a client-side and a server-side system,
+  where the client communicates with the server via specific messages.
+---
+
 # RPC Example
 
 ```csharp
