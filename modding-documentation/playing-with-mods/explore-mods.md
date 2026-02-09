@@ -18,3 +18,5 @@ To use Steam Workshop you will need to own Core Keeper on Steam.
 
 {% embed url="https://mod.io/g/corekeeper" %}
 
+Head over to Core Keepers' Mod.IO page and use tags to sort through all of the available mods.&#x20;
+

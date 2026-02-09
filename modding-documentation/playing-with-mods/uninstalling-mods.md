@@ -2,12 +2,32 @@
 
 ## Steam Workshop
 
-mods downloaded through steam workshop will be downloaded to this directory: `Steam\steamapps\workshop\content\<AppID>\`, it's not recommended to uninstall them from here manually as that can cause desync issues with Steam. If you'd like to uninstall a mod then head over to Steam Workshop on Steam and go to your pages, there you'll be able to sort through the mods that you've installed and simply click unsubscribe which'll trigger the uninstall for that mod, make sure you fully shut down your game for this to work successfully.&#x20;
+Mods downloaded through Steam Workshop will be downloaded to: `SteamLibrary\steamapps\workshop\content\1621690\`
+
+{% hint style="warning" %}
+It is not recommended to uninstall them from this folder as this can cause desync issues with Steam.
+{% endhint %}
+
+If you'd like to uninstall a mod then head on over to our Steam Workshop, open the "Your Files" dropdown on the right side of the page and click "Subscribed Items".\
+![](<../.gitbook/assets/image (27).png>)
+
+Here you can view all installed mods and unsubscribe from them individually or from all at once.
+
+In case you'd like to unsubscribe from a specific mod, please search for it in the Workshop and uninstall from there.
 
 ## Mod.io
 
-mods downloaded through Mod.IO will be downloaded to this directory: `C:\Users\Public\mod.io\[GameID]\mods`, similarly to Steam Workshop it's not recommended to uninstall them directly there as that will cause desync issues. If you'd like to uninstall a mod which you installed via Mod.IO, you should do so directly via our Mod.IO sub-menu after launching Core Keeper, you can find the mods that you have installed by heading to collections and uninstalling mods that aren't dependencies first.
+Mods downloaded through mod.io will be downloaded to this directory:\
+`C:\Users\Public\mod.io\GAME ID\mods\`<br>
+
+{% hint style="warning" %}
+Similarly to Steam Workshop, it is not recommended to uninstall them directly as that might cause issues.
+{% endhint %}
+
+If you'd like to uninstall a mod, you should head in-game to the "MODS" menu option. In there you can head over to collections and uninstall mods that have no dependents. If other mods depend on it, you need to uninstall the dependents first.
 
 ## Manual Uninstallation
 
-to uninstall any mods which you've installed manually is quite straightforward, you would just delete them from their install folder which is typically `CoreKeeper_Data\StreamingAssets\Mods` &#x20;
+To uninstall any mods which you have installed manually, you need to head to the game installation folder and then into `CoreKeeper_Data\StreamingAssets\Mods`
+
+This is also where you had to install them at first. So just delete them from there and open up your game again.
