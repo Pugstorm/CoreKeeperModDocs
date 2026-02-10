@@ -9,9 +9,11 @@ description: >-
 
 ## Setting up Asset Ripper
 
-AssetRipper is a tool used for extracting assets from Unity games. This is needed to export the textures and DataBlocks from the game and make them available in the mod sdk project.
+AssetRipper is a tool used for extracting assets from Unity games. This is needed to export the textures and DataBlocks from the game and make them available in the ModSDK project.
 
-In order to set up Asset Ripper you have to first download it here for your corresponding platform - [https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1](https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1) (The version _must be 1.2.1)_. You may pick any of the .zip folders that are compatible with your System, for most users this will be `AssetRipper_win_x64.zip` .
+In order to set up Asset Ripper you have to first download it here for your corresponding platform - [https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1](https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1) (The version _must be 1.2.1)_.
+
+You may pick any of the .zip folders that are compatible with your System, for most users this will be `AssetRipper_win_x64.zip` .
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
