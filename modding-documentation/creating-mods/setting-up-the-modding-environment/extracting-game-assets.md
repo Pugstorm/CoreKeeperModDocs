@@ -1,7 +1,8 @@
 ---
 description: >-
   This page will walk you through how to extract the Core Keeper game assets so
-  that they can be used in the ModSDK.
+  that they can be used in the ModSDK, which is required for Scriptable Data
+  modding.
 ---
 
 # Extracting Game Assets
