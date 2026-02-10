@@ -9,7 +9,7 @@ description: >-
 
 ### TextDataBlock
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 A `TextDataBlock` can define two strings: a title and a description. Both are optional, as long as the other is provided (meaning you can have a `TextDataBlock` with just a title or just a description).
 
@@ -24,9 +24,25 @@ First, make sure you have a Scriptable Data Directory asset in your mods' folder
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-Name your TextDataBlock after your items' Title and proceed to fill out the DataBlocks' Title as well as Description for English as well as any languages that you'd like to localize it to. Finally, press "Mark Localization as Up-To-Date".
+Name your TextDataBlock after your items' Title and proceed to fill out the DataBlocks' Title as well as Description for English as well as any languages that you'd like to localize it to.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+Make sure your TextDataBlocks are grouped under a `Header` called `Items` .&#x20;
+
+You can create a new `Header` by clicking on the `+` sign and selecting `Header` .
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Then, name it `Items` and move the DataBlocks under that header by right clicking them and selecting `Move to > Items`.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Finally, press `Mark Localization as Up-To-Date`.&#x20;
+
+{% hint style="warning" %}
+If you instead see `Mark Localization as Out-of-Date` , do not press it and that means you've already set up that individual TextDataBlock correctly.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Your item will now have an in-game title and description when viewed in the inventory in the localized languages.&#x20;
 
