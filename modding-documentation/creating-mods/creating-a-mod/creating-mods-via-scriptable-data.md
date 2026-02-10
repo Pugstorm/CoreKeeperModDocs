@@ -50,7 +50,7 @@ If your mod is older then you can simply do this by heading over to your mods' f
 {% step %}
 ### Choosing a ScriptableDataBlock to mod
 
-Open up the Scriptable Data Editor Window using `Window -> Scriptable Data Editor` <mark style="color:$info;">,</mark> once it's open you'll see a dropdown for ScriptableDataBlock types, these types are retrieved from the assemblies that are imported into the ModSDK during the "Updating Game Files" step. Once you've picked a ScriptableDataBlock which you think would be fun to mod you can right click it on the left-hand side in the Scriptable Data Editor Window and click `Overload to` -> `<YourScriptableDataDirectoryConfig>`.&#x20;
+Open up the Scriptable Data Editor Window using `Window > Scriptable Data Editor` <mark style="color:$info;">,</mark> once it's open you'll see a dropdown for ScriptableDataBlock types, these types are retrieved from the assemblies that are imported into the ModSDK during the "Updating Game Files" step. Once you've picked a ScriptableDataBlock which you think would be fun to mod you can right click it on the left-hand side in the Scriptable Data Editor Window and click `Overload to > <YourScriptableDataDirectoryConfig>`.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
