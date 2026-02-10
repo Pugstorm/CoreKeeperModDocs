@@ -9,7 +9,7 @@ description: >-
 
 ### TextDataBlock
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 A `TextDataBlock` can define two strings: a title and a description. Both are optional, as long as the other is provided (meaning you can have a `TextDataBlock` with just a title or just a description).
 
@@ -30,7 +30,7 @@ Make sure your TextDataBlocks are grouped under a `Header` called `Items` .&#x20
 
 You can create a new `Header` by clicking on the `+` sign and selecting `Header` .
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then, name it `Items` and move the DataBlocks under that header by right clicking them and selecting `Move to > Items`.
 
@@ -42,7 +42,7 @@ Finally, press `Mark Localization as Up-To-Date`.&#x20;
 If you instead see `Mark Localization as Out-of-Date` , do not press it and that means you've already set up that individual TextDataBlock correctly.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Your item will now have an in-game title and description when viewed in the inventory in the localized languages.&#x20;
 
@@ -68,7 +68,11 @@ Once you've selected your .CSV file, press Import to create a new TextDataBlock 
 
 Once you select your TextDataBlock you must mark it as up to date by pressing "Mark Localization as Up-To-Date". If you'd like to localize more languages than you had previously you can do so by filling out extra language entries on the datablock itself.
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="danger" %}
+Make sure your TextDataBlock falls under the `Items` Header.
+{% endhint %}
 
 You may now move your .CSV file to another directory to save it as a back-up and build your mod to test that the TextDataBlock has been set up correctly.
 
