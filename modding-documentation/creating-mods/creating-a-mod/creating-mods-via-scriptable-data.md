@@ -1,7 +1,7 @@
 ---
 description: >-
   This page aims to guide the user through the workflow of getting started with
-  scriptable data mods as well as provide tips and tricks.
+  Scriptable Data mods as well as provide tips and tricks.
 ---
 
 # Creating Mods via Scriptable Data
@@ -32,7 +32,7 @@ Create a Scriptable Data Directory assets via the create menu, and make sure you
 {% step %}
 ### Creating a mod base
 
-Head over to the PugMod window in Unity, and select "Open Mod SDK Window". Then head over to the Mod Settings tab, and select "New Mod", afterwards name your mod and press Create. This will generate a mod folder including a scriptable object containing the mods' build settings under the `Assets/<YourModNameFolder>` path. An assembly will also be generated which'll reference all of the games' assemblies that you've fetched by updating game files, this is nothing very useful for now but good to know in the future in case you run into outdated assembly issues.
+Head over to the `PugMod` window in Unity, and select `Open Mod SDK Window`. Then head over to the Mod Settings tab, and select `New Mod`, afterwards name your mod and press `Create`. This will generate a mod folder including a scriptable object containing the mods' build settings under the `Assets/<YourModNameFolder>` path. An assembly will also be generated which'll reference all of the games' assemblies that you've fetched by updating game files, this is nothing very useful for now but good to know in the future in case you run into outdated assembly issues.
 {% endstep %}
 
 {% step %}
@@ -50,7 +50,7 @@ If your mod is older then you can simply do this by heading over to your mods' f
 {% step %}
 ### Choosing a ScriptableDataBlock to mod
 
-Open up the Scriptable Data Editor Window by going to `Window -> Scriptable Data Editor` once it's open you'll see a dropdown for ScriptableDataBlock types, these types are retrieved from the assemblies that are imported into the ModSDK during the "Updating Game Files" step. Once you've picked a ScriptableDataBlock which you think would be fun to mod you can right click it on the left-hand side in the Scriptable Data Editor Window and click Overload to -> \<YourScriptableDataDirectoryConfig>.&#x20;
+Open up the Scriptable Data Editor Window using `Window -> Scriptable Data Editor` <mark style="color:$info;">,</mark> once it's open you'll see a dropdown for ScriptableDataBlock types, these types are retrieved from the assemblies that are imported into the ModSDK during the "Updating Game Files" step. Once you've picked a ScriptableDataBlock which you think would be fun to mod you can right click it on the left-hand side in the Scriptable Data Editor Window and click `Overload to` -> `<YourScriptableDataDirectoryConfig>`.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
