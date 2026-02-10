@@ -64,7 +64,7 @@ ScriptableDataBlocks can be edited in the inspector by selecting the instance of
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Simply make the changes that you'd like to make to the ScriptableDataBlock and then build the mod. The easiest way to test that you've set up everything correctly and that the Scriptable Data Block mods will work is to assign a new Gradient Map Data Block to a Sprite Asset.
+Simply make the changes that you'd like to make to the ScriptableDataBlock and then build the mod. The easiest way to test that you've set up everything correctly and that the Scriptable Data Block mods will work is to assign a new `GradientMapDataBlock` to a Sprite Asset.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
