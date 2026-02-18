@@ -9,6 +9,7 @@
   * [Creating Mods via Scriptable Data](creating-mods/creating-a-mod/creating-mods-via-scriptable-data.md)
     * [How to work with Scriptable Data](creating-mods/creating-a-mod/creating-mods-via-scriptable-data/how-to-work-with-scriptable-data.md)
   * [Creating Mods via Scripts & Prefabs](creating-mods/creating-a-mod/creating-mods-via-scripts-and-prefabs.md)
+  * [Addressables](creating-mods/creating-a-mod/addressables.md)
   * [Useful Modding Tools](creating-mods/creating-a-mod/useful-modding-tools.md)
   * [How to Localize Your Mod](creating-mods/creating-a-mod/how-to-localize-your-mod.md)
 * [Uploading Mods](creating-mods/uploading-mods.md)
