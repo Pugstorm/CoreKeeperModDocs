@@ -66,20 +66,34 @@ To create a prefab for your mod, head over to `Assets/<YourModNameFolder>` and i
 
 **Object Authoring** - this component determines the Object ID of your item, whatever you set as the items' Object name will become its' Object ID. You can also select the type of Object Type you want it to be which might change its' behavior. Rarity can be set via the rarity drop-down.
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 **Inventory Item Authoring** - this component will determine if your item is stackable in the players' inventory, what the sell value or buy value should be, the items' lootsprite, crafting settings, and more.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **Durability Authoring** - you can use this component to determine how high or low the durability/reinforce cost of your item will be, this is mostly relevant if the item that you're making is a weapon or some sort of equipment.
 
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 **Cooldown Authoring** - determines the cooldown of the item when used in Handheld item slots (1-9 keys).
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 **Gives Conditions When Equipped Authoring** - this component determines what "stats" your item should have, as an example +5% crit chance, +40% melee attack speed, +9001% damage against bosses.&#x20;
 
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
 **Weapon Damage Authoring** - here you can adjust the damage scaling for the item by modifying the damage multiplier, this is only relevant for weapons. Make sure that if you select magic/ranged that your object Type in Object Authoring also matches by using "Range Weapon" which counts for both Ranged and Magic weapons.&#x20;
 
-**Localization Authoring** - This will be the key to translate your item, which you'll need to match in your localization file. Core Keeper localization uses TextDataBlocks.
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+**Localization Authoring** - This will be the key to translate your item, which you'll need to match in your localization file. Core Keeper localization uses TextDataBlocks. Language Genders can be left empty.
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 **Secondary Use Authoring** - Mostly relevant for tools and weapons, this can enable a weapon such as a sword to have a secondary on-use ability which'll by default be right click.&#x20;
 
-
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
