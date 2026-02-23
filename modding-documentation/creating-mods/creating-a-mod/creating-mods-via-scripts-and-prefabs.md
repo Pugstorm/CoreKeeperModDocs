@@ -66,11 +66,11 @@ To create a prefab for your mod, head over to `Assets/<YourModNameFolder>` and i
 
 **Object Authoring** - this component determines the Object ID of your item, whatever you set as the items' Object name will become its' Object ID. You can also select the type of Object Type you want it to be which might change its' behavior. Rarity can be set via the rarity drop-down.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **Inventory Item Authoring** - this component will determine if your item is stackable in the players' inventory, what the sell value or buy value should be, the items' lootsprite, crafting settings, and more.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Durability Authoring** - you can use this component to determine how high or low the durability/reinforce cost of your item will be, this is mostly relevant if the item that you're making is a weapon or some sort of equipment.
 
