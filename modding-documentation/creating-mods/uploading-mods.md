@@ -2,7 +2,7 @@
 
 ## Building your mod
 
-First you must build your mod via the `Mod Settings` menu.
+First you must build your mod via the Mod Management tab.
 
 There will be three options for mod building:
 
