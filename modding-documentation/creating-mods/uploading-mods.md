@@ -1,12 +1,22 @@
 # Uploading Mods
 
-## Uploading on Steam Workshop
+## Building your mod
 
-You can upload mods to Steam Workshop, first you will need a Steam account and to make sure Steam is running in the background while you're using the ModSDK, then you will be able to upload your mod by first building it via the `Mod Settings` menu.
+First you must build your mod via the `Mod Settings` menu.
+
+There will be three options for mod building:
+
+* Build Mod, which builds your mod in a temp folder but doesn't install it locally, the purpose for this option is to be able to look at the mod that you've build and to make sure it's built correctly before installing it locally.
+* Install Mod, which installs the mod from the temp folder into your Core Keeper directory so that you can load it in-game.
+* Build and Install Mod combines the two steps.
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Then heading over to the `Steam Workshop` tab once your mod has been built. In here you will first need to initialize Steam.&#x20;
+## Uploading on Steam Workshop
+
+You can upload mods to Steam Workshop, first you will need a Steam account and to make sure Steam is running in the background.
+
+Afterwards, head over to the `Steam Workshop` tab once your mod has been built. In here you will first need to initialize Steam.&#x20;
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -16,12 +26,21 @@ By default if you click on `Initialize Steam` it will initialize Core Keepers' a
 
 Once Core Keepers' Steam app has been initialized, you will need to fill out a couple of fields such as Mod Name, Mod Tags, and so on.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 After you've filled out the fields and you're ready you may click Upload Mod to Steam Workshop. Do note that if you're updating an existing mod you will simply have to input a valid File ID for the File ID field.&#x20;
 
 ## Uploading on mod.io
 
 \
-You can upload mods to mod.io directly from the Core Keeper ModSDK, however you will first need to create a mod.io account.
+You can upload mods to mod.io directly from the Core Keeper ModSDK, however you will first need to create a mod.io account&#x20;
 
+Once you've made an account you can proceed to the ModSDK Window and head over to the mod.io tab, it may prompt you to log in if you haven't already.&#x20;
+
+Here you will be asked to fill out the description and to attach an image, you can attach an image by clicking where the Key Art is located in the image below.
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+Once ready, press Register at mod.io, then press Upload to mod.io.&#x20;
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>

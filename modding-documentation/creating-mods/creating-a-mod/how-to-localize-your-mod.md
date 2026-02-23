@@ -30,11 +30,11 @@ Make sure your TextDataBlocks are grouped under a `Header` called `Items` .&#x20
 
 You can create a new `Header` by clicking on the `+` sign and selecting `Header` .
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then, name it `Items` and move the DataBlocks under that header by right clicking them and selecting `Move to > Items`.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Finally, press `Mark Localization as Up-To-Date`.&#x20;
 
@@ -42,7 +42,7 @@ Finally, press `Mark Localization as Up-To-Date`.&#x20;
 If you instead see `Mark Localization as Out-of-Date` , do not press it and that means you've already set up that individual TextDataBlock correctly.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Your item will now have an in-game title and description when viewed in the inventory in the localized languages.&#x20;
 
