@@ -3,3 +3,4 @@
 * [Getting Started](README.md)
 * [How to Contribute](how-to-contribute.md)
 * [Info and News](info-and-news.md)
+* [Known Issues](known-issues.md)
