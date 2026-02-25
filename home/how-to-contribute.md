@@ -21,3 +21,4 @@ Every contribution helps us keep the documentation accurate, clear, and actually
 
 {% embed url="https://github.com/Pugstorm/CoreKeeperModSDK" %}
 
+{% embed url="https://github.com/Pugstorm/CoreKeeperModDocs" %}
