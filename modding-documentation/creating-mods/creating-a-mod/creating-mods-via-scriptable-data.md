@@ -68,6 +68,9 @@ Simply make the changes that you'd like to make to the ScriptableDataBlock and t
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Then once you've saved the changes and built the mod, you can launch your game and test if the ScriptableDataBlock mod changes are reflected in-game.
+Then once you've saved the changes you are ready to build the mod. For this head on over to the Mod SDK window again, go to Mod Management and click `Build Mod`.\
+![](<../../.gitbook/assets/image (28).png>)
+
+Once you built the mod, you can launch your game and test if the ScriptableDataBlock mod changes are reflected in-game.
 {% endstep %}
 {% endstepper %}
