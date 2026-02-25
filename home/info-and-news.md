@@ -4,7 +4,7 @@ icon: calendar-check
 
 # Info and News
 
-The modding SDK update is currently in an opt-in beta for the public. To join the beta please head on over to [this steam group](https://steamcommunity.com/groups/ckworkshopbeta) and join by pressing the green "Join Group" button.
+The modding SDK update is currently in an opt-in beta for the public. To join the beta please head on over to [this steam group](https://steamcommunity.com/groups/ckworkshopbeta) and join by pressing the green "Join Group" button. If you'd like to open up the steam group via the steam client instead, you can [use this link](steam://openurl/https://steamcommunity.com/groups/ckworkshopbeta).
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
