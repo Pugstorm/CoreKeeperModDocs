@@ -66,6 +66,10 @@ ScriptableDataBlocks can be edited in the inspector by selecting the instance of
 
 Simply make the changes that you'd like to make to the ScriptableDataBlock and then build the mod. The easiest way to test that you've set up everything correctly and that the Scriptable Data Block mods will work is to assign a new `GradientMapDataBlock` to a Sprite Asset.
 
+{% hint style="info" %}
+Currently if you reference Textures or ScriptableDataBlocks from the Core Keeper Assets package, references may be lost the next time you update game assets. We're working on a solution for this but be mindful to drag the textures into your mods' folder and make DataBlock copies via overloading.
+{% endhint %}
+
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then once you've saved the changes you are ready to build the mod. For this head on over to the Mod SDK window again, go to Mod Management and click `Build Mod`.\
