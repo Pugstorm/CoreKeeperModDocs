@@ -22,7 +22,7 @@ Sometimes an asset like a Prefab or a Scriptable Object will lose a reference to
 {% step %}
 ### UnityExplorer
 
-An in-game UI tool for modders to find scenes, sprites, and much more. You can read more in-depth about the tool [here](https://thunderstore.io/c/boneworks/p/sinai-dev/UnityExplorer_IL2CPP_ML/) as well as manually install it.
+An in-game UI tool for modders to find scenes, sprites, and much more. You can read more in-depth about the tool [here](https://mod.io/g/corekeeper/m/unityexplorer#description) as well as manually install it.
 {% endstep %}
 
 {% step %}
