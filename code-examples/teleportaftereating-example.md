@@ -32,7 +32,6 @@ public class TeleportAfterEating : IMod
          * typically gives the job enough time to start before burst is enabled
          * again.
          */
-        BurstDisabler.DisableBurstForSystem<PlayerStateSystemGroup>();
         BurstDisabler.DisableBurstForSystem<EquipmentUpdateSystem>();
     }
 
