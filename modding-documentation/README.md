@@ -8,7 +8,7 @@ description: >-
 
 You will need to have Unity to open up the ModSDK.
 
-The Core Keeper Mod SDK (Software Development Kit) is a Unity project which can be opened with Unity version `6000.0.59f2`.&#x20;
+The Core Keeper Mod SDK (Software Development Kit) is a Unity project which can be opened with Unity version `6000.0.59f2` , you can download the Mod SDK itself [here](https://github.com/Pugstorm/CoreKeeperModSDK).
 
 1.  Download the project to your PC, either using Git or by clicking the green `Code > Download ZIP` button on the right side of the page and extracting the archive anywhere.\
     Git is a version control system that helps track changes and if needed revert them. Please see [this link](https://docs.github.com/en/get-started/using-git/about-git) for additional information.
