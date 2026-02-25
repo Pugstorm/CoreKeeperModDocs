@@ -22,6 +22,6 @@ The Core Keeper Mod SDK (Software Development Kit) is a Unity project which can 
    <img src=".gitbook/assets/image (3) (1) (1) (1).png" alt="" data-size="original">
 5. (Optional) Press the three dot menu next to the project, select "Add command line arguments", add `-disable-assembly-updater` and press Save. This is not strictly required, but it will remove some errors from the log when you open the project.\
    ![](<.gitbook/assets/image (8) (1).png>)![](<.gitbook/assets/image (9).png>)
-6. Open the project. If you do not already have a matching Unity Editor version, Unity Hub will guide you through installing it. Make sure to enable "Linux Build Support (Mono)" or you won't be able to install or build your mods. All other options can be left at their default values.
+6. Open the project. If you do not already have a matching Unity Editor version, Unity Hub will guide you through installing it. Make sure to enable "Linux Build Support (Mono)" or you won't be able to install or build your mods. All other options can be left at their default values. If You are on Linux you will need to enable the "Windows Build Support" module.
 
 You might occasionally see some errors in the log. This is not necessarily always a problem, especially before fully loading the game files into the project, but we will try to keep this as clean as possible.
