@@ -85,7 +85,7 @@ public class SpawnStuffFromTiles : IMod
         API.Effects.PlayPuff((int)PuffID.AncientEnergyBurst, FXPosition, 50);
 
         // Play a sound effect.
-        API.Audio.PlaySfx((int)SfxID.AF_portal_teleport, FXPosition, pitchMultiplier: 1f, volumeMultiplier: 2f);
+        API.Audio.PlaySfx(SfxTableID.acidLarvaDeath, FXPosition, pitchMultiplier: 1f, volumeMultiplier: 2f);
 
         // Get a random Object ID between 1001 and 1011, on Core Keepers' end these are all the bars from bronze to relucite.
         int randomObjectID = random.NextInt(1001, 1011);
