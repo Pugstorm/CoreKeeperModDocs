@@ -6,8 +6,6 @@ description: >-
 
 # Burst Direct-Call Hook Example
 
-This example shows how to replace a Burst direct-call target at runtime by swapping the cached function pointer that Unity generates for Burst compiled methods.
-
 This is useful when:
 
 * The code you want to affect runs from Burst compiled systems or jobs.
