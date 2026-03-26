@@ -5,6 +5,7 @@
 * [System Example](system-example.md)
 * [RPC Example](rpc-example.md)
 * [BurstDisabler Example](burstdisabler-example.md)
+* [Burst Direct-Call Hook Example](burst-direct-call-hook-example.md)
 * [TeleportAfterEating Example](teleportaftereating-example.md)
 * [SpawnStuffFromTiles Example](spawnstufffromtiles-example.md)
 * [GradientMapDataBlock Example](gradientmapdatablock-example.md)
