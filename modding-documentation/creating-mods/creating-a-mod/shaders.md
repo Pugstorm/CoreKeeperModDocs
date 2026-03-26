@@ -1,0 +1,78 @@
+---
+description: >-
+  This page is dedicated to showcasing how shaders are set up in Core Keeper and
+  how they can be set up in the ModSDK to achieve similar visual effects for
+  tiles, items, enemies and so on.
+---
+
+# Shaders
+
+Below are the most commonly used shaders alongside their shader graphs:\
+\
+**AdjacentCircuitPlatesAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE.png" alt=""><figcaption></figcaption></figure>
+
+**AFPortalAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (1).png" alt=""><figcaption></figcaption></figure>
+
+**AquariumFish**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (2).png" alt=""><figcaption></figcaption></figure>
+
+**CircuitPlateAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (3).png" alt=""><figcaption></figcaption></figure>
+
+**CustomLitAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (4).png" alt=""><figcaption></figcaption></figure>
+
+**CustomLitColorCyclerAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (5).png" alt=""><figcaption></figcaption></figure>
+
+**CustomLitColorReplacementAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (6).png" alt=""><figcaption></figcaption></figure>
+
+**CustomLitGhostAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (7).png" alt=""><figcaption></figcaption></figure>
+
+**CustomLitMulWithEmissiveAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (8).png" alt=""><figcaption></figcaption></figure>
+
+**CustomLitRipplingWaterAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (9).png" alt=""><figcaption></figcaption></figure>
+
+**CustomLitTransparent**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (10).png" alt=""><figcaption></figcaption></figure>
+
+**CustomLitWithEmissiveAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (11).png" alt=""><figcaption></figcaption></figure>
+
+**ElectricityEmissiveAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (12).png" alt=""><figcaption></figcaption></figure>
+
+**GroundAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (13).png" alt=""><figcaption></figcaption></figure>
+
+**WaterAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (14).png" alt=""><figcaption></figcaption></figure>
+
+**LitAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (15).png" alt=""><figcaption></figcaption></figure>
+
+**LitFloorEmissiveAmplify**
+
+<figure><img src="../../.gitbook/assets/ScreenshotASE (16).png" alt=""><figcaption></figcaption></figure>

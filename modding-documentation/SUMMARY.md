@@ -12,6 +12,7 @@
   * [Addressables](creating-mods/creating-a-mod/addressables.md)
   * [Useful Modding Tools](creating-mods/creating-a-mod/useful-modding-tools.md)
   * [How to Localize Your Mod](creating-mods/creating-a-mod/how-to-localize-your-mod.md)
+  * [Shaders](creating-mods/creating-a-mod/shaders.md)
 * [Uploading Mods](creating-mods/uploading-mods.md)
 
 ## Playing with Mods
