@@ -7,7 +7,7 @@ description: >-
 
 # Shaders
 
-Below are the most commonly used shaders alongside their shader graphs:\
+Below are some of the most commonly used shaders alongside their shader graphs:\
 \
 **AdjacentCircuitPlatesAmplify**
 
