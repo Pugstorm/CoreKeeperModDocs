@@ -1,8 +1,8 @@
 ---
 description: >-
-  This page is dedicated to showcasing how shaders are set up in Core Keeper and
-  how they can be set up in the ModSDK to achieve similar visual effects for
-  tiles, items, enemies and so on.
+  This page is dedicated to showcasing how some shaders are set up in Core
+  Keeper and how they can be set up in the ModSDK to achieve similar visual
+  effects for tiles, items, enemies and so on.
 ---
 
 # Shaders
