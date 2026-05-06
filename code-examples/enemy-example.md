@@ -9,11 +9,11 @@ description: >-
 
 In the case of an Enemy we will want to create a Sprite Asset Data Block which we'll assign to the Enemy prefabs' Sprite Object. We start by creating a Sprite Asset in our mods' scriptable data directory. You can do so by opening up the Scriptable Data Editor Window, making sure the right Data Block directory is selected and selecting the Sprite Asset sorting type, then press Add new Data Block and proceed to set it up.&#x20;
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 The animations are set up by adding an animation entry and referencing a texture, then selecting the amount of frames you'd like for the animation to have based on how many you intended when you created the texture.&#x20;
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once you've set up your Sprite Asset Data Block with the wanted animations, you can proceed to set up your Enemies' prefabs. There will always be two prefabs that you'll have to create, one prefab which will be the actual entity containing game logic, on our end we call this the ECS prefab, and another prefab containing the Sprite Object which'll hold the enemies' graphics.&#x20;
 

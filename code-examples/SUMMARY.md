@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Item Example](README.md)
+* [Workbench Example](readme-1.md)
 * [Enemy Example](enemy-example.md)
 * [System Example](system-example.md)
 * [RPC Example](rpc-example.md)
@@ -8,6 +9,7 @@
 * [Burst Direct-Call Hook Example](burst-direct-call-hook-example.md)
 * [TeleportAfterEating Example](teleportaftereating-example.md)
 * [SpawnStuffFromTiles Example](spawnstufffromtiles-example.md)
+* [ModCommands Example](readme-2.md)
 * [GradientMapDataBlock Example](gradientmapdatablock-example.md)
 * [GroundFogDataBlock Example](groundfogdatablock-example.md)
 * [SpriteAssetDataBlock Example](spriteassetdatablock-example.md)

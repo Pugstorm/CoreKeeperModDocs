@@ -11,5 +11,5 @@ description: >-
 
 The primary Authoring Components needed are:
 
-* Object Authoring, which primarily determines the Object Type of your item, and also Object ID of the item which must be unique relative to other existing items in the game.
-* Inventory Item Authoring, which makes your item into an inventory item and also gives it an inventory icon among other things.
+* Object Authoring, which primarily determines the Object Type of your item, and also Object ID of the item which must be unique relative to other existing items in the game. To give your item an Object ID you must set its' Object Name which will be converted to an Object ID when the game starts.
+* Inventory Item Authoring, which makes your item into an inventory item and also gives it an inventory icon.
