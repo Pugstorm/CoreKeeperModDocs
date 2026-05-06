@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Mod SDK changelog](README.md)
+  * [1.2.1](mod-sdk-changelog/1.2.1.md)
   * [1.2.0](<README (1).md>)
   * [1.1.2.8](1.1.2.8.md)
   * [1.1.2.6](mod-sdk-changelog/1.1.2.6.md)
