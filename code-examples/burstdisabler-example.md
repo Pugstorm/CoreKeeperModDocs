@@ -23,6 +23,12 @@ public class BurstDisable : IMod
 	{
 		// Call to disable burst for these specific systems so we can patch them
 		BurstDisabler.DisableBurstForSystem<SpawnEnvironmentObjectsInNewAreaSystem>();
+
+		// Arm any worlds that already exist, so the registration is not missed — see below
+		foreach (var world in World.All)
+		{
+			BurstDisabler.AddWorld(world);
+		}
 		
 		// Note: Patches via HarmonyPatchAttribute are applied automatically unless disabled via ModBuilderSettings
 	}
@@ -73,3 +79,15 @@ public static class DisableEnvironmentSpawnPatch
 	}
 }
 ```
+
+## Dedicated Servers
+
+Without the `AddWorld` pass in `Init()` above, your patch still binds but its prefix never runs — no error, no log line. In practice that means the mod works when a player hosts the game and quietly does nothing on a dedicated server; the split is measured rather than guaranteed, which is the reason to write the pass unconditionally instead of branching on the build. `SpawnEnvironmentObjectsInNewAreaSystem` runs only in the ServerSimulation world, which lives inside the hosting player's own process and in the dedicated server process, so there is no client-world copy of it doing the same work.
+
+For an `ISystem` like this one, `DisableBurstForSystem<T>()` takes effect per system type while the Burst bypass is keyed per world: `BurstDisabler.AddWorld(world)` is what resolves a registered type into the system handle for a given world. A managed `SystemBase` takes a different path that never reaches that registry, so the per-world arming described here does not apply to it. The game does that pass itself while ECS starts up, after the worlds exist, and it can only arm what has been registered by then. What differs between the builds is whether your registration is in place by then, and that is the part the API leaves open. Measured on both: when a player hosts, `Init()` has run before the worlds are created, so the game's own pass picks the registration up; on a dedicated server the worlds are built first and that pass finds nothing.
+
+`AddWorld` only sees what was registered before it runs, so register every system you need first and do the pass once afterwards. Writing it unconditionally is safe: where the worlds do not exist yet at `Init()` time, the pass finds nothing to arm and the game's own startup handles it.
+
+{% hint style="warning" %}
+Neither half of this belongs in `EarlyInit()`, and they fail there for different reasons. `DisableBurstForSystem<T>()` cannot run that early — the type initialization it depends on has not happened yet, which is what the comment in the example above refers to. Moving only the `World.All` pass there is quieter and no better: the registration set it arms from is still empty that early, since `DisableBurstForSystem<T>()` fills it from `Init()`, so the pass arms nothing at all.
+{% endhint %}
