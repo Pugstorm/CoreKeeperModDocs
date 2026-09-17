@@ -1,7 +1,7 @@
 ---
 description: >-
-  This page explains how you can import the AssetRipper export into the ModSDK
-  Unity project.
+  This page explains how you can update game assemblies and import the
+  AssetRipper export into the ModSDK Unity project.
 ---
 
 # Updating Game Files
