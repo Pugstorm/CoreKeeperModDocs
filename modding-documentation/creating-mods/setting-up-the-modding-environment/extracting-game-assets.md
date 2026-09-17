@@ -11,7 +11,7 @@ description: >-
 
 AssetRipper is a tool used for extracting assets from Unity games. This is needed to export the textures and DataBlocks from the game and make them available in the ModSDK project.
 
-In order to set up Asset Ripper you have to first download it here for your corresponding platform - [https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1](https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1) (The version _must be 1.2.1)_.
+In order to set up Asset Ripper you have to first download it here for your corresponding platform - [https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1](https://github.com/AssetRipper/AssetRipper/releases/tag/1.2.1) **(The version&#x20;**_**must be 1.2.1)**_.
 
 You may pick any of the .zip folders that are compatible with your System, for most users this will be `AssetRipper_win_x64.zip` .
 
@@ -20,6 +20,10 @@ You may pick any of the .zip folders that are compatible with your System, for m
 ## Exporting the Game Assets
 
 Once you have Asset Ripper set up open it and select `File > Open Folder`.&#x20;
+
+{% hint style="danger" %}
+It is perfectly normal for there to be some red errors!
+{% endhint %}
 
 <figure><img src="../../.gitbook/assets/bd28bd803da42fc5e7b709301511ce14.png" alt=""><figcaption></figcaption></figure>
 
@@ -32,9 +36,5 @@ When Asset Ripper CMD window says `Processing : Finished processing assets` in t
 <figure><img src="../../.gitbook/assets/f5943e096f2f9af8f88a7cdb9940cfc9.png" alt=""><figcaption></figcaption></figure>
 
 Here I recommend creating a new folder which will be easy to find, once you've created a folder, you may select it and continue by pressing `Export Unity Project`. You will now be able to see all of the game files' being processed by Asset Ripper in the CMD window. Do not close neither the graphical UI nor the CMD window until the process finishes. Once Asset Ripper CMD window says `Export : Finished post-export` you may close Asset Ripper and return to the ModSDK.&#x20;
-
-{% hint style="info" %}
-It is perfectly normal for there to be some red errors!
-{% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
