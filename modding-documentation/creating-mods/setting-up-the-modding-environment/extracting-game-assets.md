@@ -35,6 +35,8 @@ When Asset Ripper CMD window says `Processing : Finished processing assets` in t
 
 <figure><img src="../../.gitbook/assets/f5943e096f2f9af8f88a7cdb9940cfc9.png" alt=""><figcaption></figcaption></figure>
 
-Here I recommend creating a new folder which will be easy to find, once you've created a folder, you may select it and continue by pressing `Export Unity Project`. You will now be able to see all of the game files' being processed by Asset Ripper in the CMD window. Do not close neither the graphical UI nor the CMD window until the process finishes. Once Asset Ripper CMD window says `Export : Finished post-export` you may close Asset Ripper and return to the ModSDK.&#x20;
+Here I recommend creating a new folder which will be easy to find as you will need to select this folder when updating game assets in the next page.&#x20;
+
+Once you've created a folder, you may select it and continue by pressing `Export Unity Project`. You will now be able to see all of the game files' being processed by Asset Ripper in the CMD window. Do not close neither the graphical UI nor the CMD window until the process finishes. Once Asset Ripper CMD window says `Export : Finished post-export` you may close Asset Ripper and return to the ModSDK.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
