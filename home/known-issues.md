@@ -5,6 +5,10 @@ icon: bug
 
 # Known Issues
 
+#### Ghost Component cap
+
+Creating more than a handful new ghost components results in the game crashing. This will be fixed in the next stability patch, most likely early next week.
+
 #### Unity takes up the "Core Keeper" game on Steam
 
 This is a known issue when you have initialized steam. Since the SDK hooks into the Steam Client to upload mod to the Workshop, Steam will treat the Unity process as the game. Only fix once this happens is to close Unity.
