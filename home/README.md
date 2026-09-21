@@ -2,10 +2,10 @@
 icon: list-check
 ---
 
-# Getting Started (Short)
+# Getting Started
 
-{% hint style="warning" %}
-The modding tools and Steam Workshop integration are currently in beta. Find out more [here](info-and-news.md)!
+{% hint style="success" %}
+The modding tools and Steam Workshop integration are now officially released! Found out more [here](info-and-news.md)!
 {% endhint %}
 
 This documentation contains everything you need to create and share mods, including SDK updates and code examples to help you get started.
