@@ -4,7 +4,7 @@ icon: calendar-check
 
 # Info and News
 
-The modding SDK update is now officially released alongside the workshop. Feel free to check it out [here](https://steamcommunity.com/app/3621230/workshop).
+The modding SDK update is now officially released alongside the workshop. Feel free to check it out [here](https://steamcommunity.com/app/1621690/workshop/).
 
 To get the latest version of the modding sdk, please download or clone the [Official Repo](https://github.com/Pugstorm/corekeepermodsdk). You can find the installation instructions [here](https://app.gitbook.com/s/PzJZ32C4y5NoFuxrd1BA/creating-mods/setting-up-the-modding-environment).
 
