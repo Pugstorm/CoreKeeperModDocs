@@ -5,6 +5,10 @@ icon: bug
 
 # Known Issues
 
+#### Steam Workshop uploading tool occupying Core Keeper APP
+
+Currently the tooling required for this to not happen is in place but not working as intended, this is fixed on our end and will be shipped with the next stability patch.
+
 #### Ghost Component cap
 
 Creating more than a handful new ghost components results in the game crashing. This will be fixed in the next stability patch, most likely early next week.
