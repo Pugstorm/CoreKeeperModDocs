@@ -141,8 +141,6 @@ By heading over to `Actions` in the top right corner of the custom scene creatio
 
 <figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
-### Building, testing, and Publishing custom scenes
-
 ### Building
 
 To build your custom scene you should proceed back to the Mod SDK Window, by pressing `PugMod` in the menu options and then selecting `Open Mod SDK Window`. Once you're there you should proceed to the `Mod Management` tab and press `Build and Install Mod`.
@@ -165,10 +163,14 @@ This will spawn your custom scene in-game!&#x20;
 
 ### Publishing
 
-To publish your custom scene you should open the `Steam Workshop` tab in the Mod SDK Window and select your mod from the dropdown, then fill out the fields as you see fit! Once you're ready, press `Upload Mod to Steam Workshop`. From now on forth will be able to update your mod's tags, visibility, description, title or contents by adjusting any of these fields and pressing `Update Mod on Steam Workshop`.
+To publish your custom scene you should open the `Steam Workshop` tab in the Mod SDK Window and select your mod from the dropdown, then fill out the fields as you see fit! Once you're ready, press `Upload Mod to Steam Workshop`.&#x20;
+
+From now on forth will be able to update your mod's tags, visibility, description, title or contents by adjusting any of these fields and pressing `Update Mod on Steam Workshop`.
 
 <figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
-Once it has been uploaded, you can press `Go to Mod page` to go to your mod's page on Steam Workshop. Other players will now be able to download and use your scene in-game by subscribing to this mod.
+Once it has been uploaded, you can press `Go to Mod page` to go to your mod's page on Steam Workshop.&#x20;
+
+Other players will now be able to download and use your scene in-game by subscribing to this mod.
 
 <figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
