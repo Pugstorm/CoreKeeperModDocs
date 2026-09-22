@@ -6,11 +6,25 @@ description: >-
 
 # Creating Mods via Scriptable Data
 
+### What is Scriptable Data?
+
+Scriptable Data is what Core Keeper uses to store and organize information about objects within the game.&#x20;
+
+For example: the player character's eye color, or the appearance of an armor piece.
+
+The core idea of Scriptable Data modding is that players can overwrite this information by creating their own pieces of Scriptable Data, called Scriptable Data Blocks.
+
+There are many different types of Scriptable Data Blocks which store different information, some may store an armor skin, whereas others may store the color of the fog in an area in-game.
+
+The main way to interact with Scriptable Data Block types and to manage them is through the Scriptable Data Editor Window.
+
 ### Scriptable Data Editor Window
+
+
 
 You can discover the Scriptable Data Editor by going to `Window > Scriptable Data Editor`.
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
 ### How to create new assets, and where to find games' assets
 
