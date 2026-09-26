@@ -126,7 +126,7 @@ You can clear the reference by selecting the referenced data block as shown abov
 
 Head over to the `PugMod` menu in Unity, and select `Open Mod SDK Window`.&#x20;
 
-Then head over to the Mod Settings tab, and select `New Mod`, afterwards name your mod and press `Create`.&#x20;
+Then head over to the Mod Settings tab, and select `New Mod`, type a name your mod and press `Create`.&#x20;
 
 This will generate a mod folder including a scriptable object containing the mods' build settings under the `Assets/<YourModNameFolder>` path.&#x20;
 
@@ -138,13 +138,13 @@ An assembly will also be generated which'll reference all of the games' assembli
 
 Open up the Scriptable Data Editor Window using `Window > Scriptable Data Editor` .
 
-Once it's open you'll see a dropdown for ScriptableDataBlock types, these types are retrieved from the assemblies that are imported into the ModSDK during the "Updating Game Files" step.
+You will need to sort by the Core Keeper Assets directory from the dropdown in the top left.
+
+You'll also see a dropdown for ScriptableDataBlock types, these types are retrieved from the assemblies that are imported into the ModSDK during the "Updating Game Files" step.
 
 Once you've picked a ScriptableDataBlock which you think would be fun to mod you can right click it on the left-hand side in the Scriptable Data Editor Window and click `Overload to > <YourScriptableDataDirectoryConfig>`.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-Make sure the config is located in the right mod folder for which you want to build this Scriptable Data mod!
 {% endstep %}
 
 {% step %}
