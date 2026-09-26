@@ -1,7 +1,5 @@
 ---
-description: >-
-  This page aims to guide the user through the workflow of getting started with
-  Scriptable Data mods as well as provide tips and tricks.
+description: This page aims to help you get started with Scriptable Data modding.
 ---
 
 # Creating Mods via Scriptable Data
