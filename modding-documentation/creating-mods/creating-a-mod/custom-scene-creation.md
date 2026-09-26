@@ -30,6 +30,8 @@ You'll then need to navigate to the `Custom Scene` type, you can do so by pressi
 
 <figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
+### Creating a Custom Scene
+
 Next press the `+` sign and select `Data Block`. You'll have to name the scene and then press enter to save.
 
 <figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
@@ -93,7 +95,7 @@ Some of these items will not be placeable objects that'll occupy a tile, such as
 
 <figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
-### Drawing tools
+### Available tools
 
 #### Paint
 
@@ -141,7 +143,7 @@ By heading over to `Actions` in the top right corner of the custom scene creatio
 
 <figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
-### Building
+### Building your scene into a mod
 
 To build your custom scene you should proceed back to the Mod SDK Window, by pressing `PugMod` in the menu options and then selecting `Open Mod SDK Window`. Once you're there you should proceed to the `Mod Management` tab and press `Build and Install Mod`.
 
@@ -149,7 +151,7 @@ You will receive a pop-up asking you if you would like for your custom scene to 
 
 <figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
-### Testing
+### Testing the scene in-game
 
 To test your custom scene in-game you should install the `Mod Utilies` mod as well, by extracting the examples.zip into your assets folder, and then building the `Mod Utilities` mod locally via the `Build and Install Mod` option, after selecting it from the dropdown.
 
@@ -161,7 +163,7 @@ This will spawn your custom scene in-game!&#x20;
 
 <figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
-### Publishing
+### Publishing your scene
 
 To publish your custom scene you should open the `Steam Workshop` tab in the Mod SDK Window and select your mod from the dropdown, then fill out the fields as you see fit! Once you're ready, press `Upload Mod to Steam Workshop`.&#x20;
 
