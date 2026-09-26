@@ -21,11 +21,17 @@ You can discover the Scriptable Data Editor by going to `Window > Scriptable Dat
 
 ### Scriptable Data Block
 
-A data block represents a _piece of data_, or an _instance of a data type_. You might for example have an `EnemyDataBlock` type, and several data blocks of that type, like forestGoblin, desertGoblin, forestBird etc.
+A data block represents a _piece of data_, or an _instance of a data type_.&#x20;
+
+You might for example have an `EnemyDataBlock` type, and several data blocks of that type, like caveling, desertCaveling, wizardCaveling etc.
 
 Data block types must inherit from `ScriptableDataBlock`, which itself inherits from `ScriptableObject`.&#x20;
 
-Everything that works with ScriptableObjects also works with data block types, with one exception: you should not use direct references to data blocks. Instead, use `DataBlockRef<T>` where `T` is your data block type. A data block ref uses an address (`Guid`) to "softly" refer to a data block. At runtime, the address is used to "get" the data block from the runtime lookup. This is why the system supports modding inherently: as long as a data block with the same address as another is loaded after it, _it will override it_. This allows modders to "replace" our data blocks with their own.
+Everything that works with ScriptableObjects also works with data block types, with one exception: you should not use direct references to data blocks.&#x20;
+
+Instead, use `DataBlockRef<T>` where `T` is your data block type. A data block ref uses an address (`Guid`) to "softly" refer to a data block.&#x20;
+
+At runtime, the address is used to "get" the data block from the runtime lookup. This is why the system supports modding inherently: as long as a data block with the same address as another is loaded after it, _it will override it_. This allows modders to "replace" our data blocks with their own.
 
 ### DataBlockAddress
 
@@ -91,7 +97,7 @@ As an example if I have the BurstDisable Scriptable Data Directory selected and 
 
 <figure><img src="../../../.gitbook/assets/image (7) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-A Scriptable Data Directory will be automatically created for you whenever you create a new mod via the ModSDKWindow, however for mods that were made before this update you'll have to create it manually via the Create menu, you can do so by right clicking in the folder you want to create it in and selecting `Create > Scriptable Data > Additional Data Directory` .
+A Scriptable Data Directory will be automatically created for you whenever you create a new mod via the ModSDKWindow, however for mods that were made before Core Keeper's `1.2.0` update will have to create it manually via the Create menu, you can do so by right clicking in the folder you want to create it in and selecting `Create > Scriptable Data > Additional Data Directory` .
 
 <figure><img src="../../../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -111,49 +117,71 @@ You can now sort by your Scriptable Data Directory to find the newly made Data B
 
 <figure><img src="../../../.gitbook/assets/c401df5663b0d3c71bb189baa019f5d5.gif" alt=""><figcaption></figcaption></figure>
 
-### Scriptable Data Block types which support Modding
+### Creating Scriptable Data Block instances during runtime
 
-#### Ground Fog
+The main rule to creating ScriptableDataBlock instances during runtime is that they have to be created in `IMod.EarlyInit()`, since they have to exist before ScriptableData has started loading.
 
-Can be used to generate fog around certain block types.
+Here are a few examples of what you can do with these functions! These examples will use the `GroundFogDataBlock` type.
 
-#### Gradient Map
+#### **Create a new ScriptableDataBlock instance during runtime**
 
-Recolors existing Sprite Assets and Sprite Asset Skins by reference.
+```c#
+public void EarlyInit()
+{
+    var fog = API.DataBlocks.CreateRuntimeInstance<GroundFogDataBlock>(modID);
 
-#### Sprite Asset
+    fog.name = "RuntimeDirtPitGroundFog";
+    fog.tileType = TileType.pit;
+    fog.tileset = Tileset.Dirt;
+    fog.tint = Color.green;
+}
+```
 
-Stores a texture which can also be animated if it contains multiple frames. Can be recolored by referencing a Gradient Map.
+#### **Overload a ScriptableDataBlock provided by another mod, or one which already exists in Core Keeper with a Data Block instance created during runtime**
 
-#### Sprite Asset Skin
+```c#
+public void EarlyInit()
+{
+    var addressToOverload = new DataBlockAddress(address);
 
-References a Sprite Asset and can act as a variation of that Sprite Asset by effectively reskinning it.
+    var fog = API.DataBlocks.CreateRuntimeInstance<GroundFogDataBlock>(modID, addressToOverload);
 
-#### Text
+    fog.name = "RuntimeDirtPitGroundFog";
+    fog.tileType = TileType.pit;
+    fog.tileset = Tileset.Dirt;
+    fog.tint = Color.red;
+}
+```
 
-Used for localization and general display of text in-game or menus.
+Mod IDs can be retrieved using `API.ModLoader.LoadedMods`.
 
-#### Player Customization Table
+#### Getting and Iterating over a Scriptable Data Block type list during runtime
 
-Acts as the source for all player customization references.
+```csharp
+var groundFogDataBlocks = ScriptableData.GetDataBlocks<GroundFogDataBlock>();
+foreach (var groundFogDataBlock in groundFogDataBlocks)
+{
+    // Do something with the individual datablocks
+}
+```
 
-#### Source Color
+#### Getting and Iterating over a Scriptable Data Block type list in the editor
 
-Targets the colors' of the players' default texture colors to replace with replacement colors.
+```csharp
+#if UNITY_EDITOR
+var groundFogDataBlocks = ScriptableDataEditorUtility.GetCachedDataBlocks<GroundFogDataBlock>();
+foreach (var groundFogDataBlock in groundFogDataBlocks)
+{
+    // Do something with the individual datablocks
+}
+#endif
+```
 
-#### Skin Base
+#### Getting a ScriptableDataBlock instance by using it's address&#x20;
 
-SkinBase is the collection that has the following ScriptableDataBlocks inheriting from it:
-
-* BodySkin
-* EyesSkin
-* HairSkin
-* PantsSkin
-* ShirtSkin
-* ReplacementColor
-* HelmSkin
-* BreastArmorSkin
-* PantsArmorSkin
-
-
-
+```csharp
+if (ScriptableData.TryGetDataBlock<GroundFogDataBlock>(address, out var groundFogDataBlock))
+{
+    // Do something with the individual datablock
+}
+```
