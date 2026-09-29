@@ -222,7 +222,9 @@ public static class ForceJobCompletePatch
 {% step %}
 ### Scripting Restrictions
 
-The only limit to what you can access are things like I/O and network operations that might be damaging to the host computer. Otherwise the only limitation is that the more “internal” functions that are accessed, the more likely this will break in future updates.
+The only limitation to what you can access are things like I/O and network operations that might be damaging to the host computer.&#x20;
+
+Please note that the more “internal” functions are accessed, the more likely any code using them will break in future updates.
 
 The main restricted parts are:
 
@@ -235,7 +237,7 @@ The main restricted parts are:
 * Application.Quit
 * Accessing native assemblies
 
-You can overcome these limitations by finding the Mod Builder Settings Scriptable Object instance in your Assets folder, it will be named after your mods' folder. Once you've located it, check **Skip Safety Checks** and **Accesses Extra Assemblies**. The downside of this is that your built mod will be marked with a tag informing mod users that these assemblies have skipped safety checks and may access other assemblies.
+You can disable these limitations by finding the Mod Builder Settings Scriptable Object instance in your Assets folder, it will be named after your mods' folder. Once you've located it, check **Skip Safety Checks** and **Accesses Extra Assemblies**. The downside of this is that your built mod will be marked with a tag informing mod users that these assemblies have skipped safety checks and may access other assemblies.
 
 <figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
@@ -249,15 +251,19 @@ To create a prefab for your mod, head over to `Assets/<YourModNameFolder>` and i
 
 <figure><img src="../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
-The most common purpose if a prefab is to implement components that will determine how an item for example behaves in-game.&#x20;
+The most common purpose if a prefab is to implement components that will determine how, for example, an item behaves in-game.
 
-Think of it as a data container. There are different types of authoring components that you can add to your prefab, but here are the most common ones that you'd want to add to for example make a mod which adds a new Sword.
+Think of it as a data container. There are various different types of authoring components which you can add to your prefab, and most of them do quite different things, we'll go over the most common ones in the next step.
 {% endstep %}
 
 {% step %}
 ### Authoring Components and adding them to prefabs
 
-**Object Authoring** - this component determines the Object ID of your item, whatever you set as the items' Object name will become its' Object ID. You can also select the type of Object Type you want it to be which might change its' behavior. Rarity can be set via the rarity drop-down.
+**Object Authoring** - this component determines the Object ID of your item, whatever you set as the item's Object name will become its Object ID.&#x20;
+
+You can also select the type of Object Type you want it to be, which affects its behavior. For example if you want it to behave as a Melee Weapon you'd want it to be Object Type: Melee Weapon, whereas for a Ranged Weapon you'd want its Object Type to be Ranged Weapon.
+
+Rarity can be set via the rarity drop-down.
 
 <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
