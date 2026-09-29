@@ -12,19 +12,58 @@ description: >-
 {% step %}
 ### Creating a mod base
 
-Head over to the PugMod window in Unity and select `Open Mod SDK Window`. Then head over to the Mod Settings tab and select `New Mod`. Afterwards name your mod and press `Create`. This will generate a mod folder including a scriptable object containing the mods' build settings under the `Assets\<YourModNameFolder>` path. An assembly will also be generated which'll reference all of the games' assemblies that you've fetched by updating game files, this is nothing very useful for now but good to know in the future in case you run into outdated assembly issues.
+Head over to the PugMod window in Unity and select `Open Mod SDK Window`.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+
+Then head over to the Mod Settings tab and select `New Mod`. Afterwards name your mod and press `Create`.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+
+This will generate a mod folder including a scriptable object containing the mods' build settings under the `Assets\<YourModNameFolder>` path.&#x20;
+
+A script assembly will also be generated which'll reference all of the games' assemblies that you've fetched by updating game files, this is nothing very useful for now but good to know in the future in case you run into outdated assembly issues.
 {% endstep %}
 
 {% step %}
 ### Creating a script&#x20;
 
-To create a script for your mod, head over to `Assets\<YourModNameFolder>` and inside of it right click, then select `Create > C# Script`. This will cause Unity to recompile and is expected. Once you've made a script you can double click it in Unity and that'll open it using your default text editor. Inside the script you will be expected to inherit and implement the IMod interface, you don't have to do this for every script in your mods' folder, just the one that you want to do something special whenever your mod is loaded/updated/etc.&#x20;
+To create a script for your mod, head over to `Assets\<YourModNameFolder>` and inside of it right click, then select `Create > MonoBehaviour Script`.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+
+This will cause Unity to recompile, which is expected and can take a few minutes.&#x20;
+
+Once you've made a script and it has finished loading you can double click the script in Unity and that'll open it using your default text editor.
+
+Inside the script you will be expected to inherit and implement the IMod interface, you don't have to do this for every script in your mods' folder, just the one that you want to do something special whenever your mod is loaded/updated/etc.&#x20;
+
+Here is an example of implementing the IMod interface:
+
+```csharp
+using PugMod;
+using UnityEngine;
+
+public class EnableConsole : IMod
+{
+public void EarlyInit()
+{
+// This enables Console Commands.
+Manager.enableConsole = true; // Make sure to run this in EarlyInit()!
+}
+// ...Init, ModObjectLoaded(...), Shutdown(), Update()...
+}
+```
 {% endstep %}
 
 {% step %}
 ### Using the API&#x20;
 
-The IMod interface is the basic interface used to initialize your scripts. From there you can access most of the game files. The functions provided under the PugMod.API are the most stable currently so try to use them whenever possible.&#x20;
+The IMod interface is the basic interface used to initialize your scripts.&#x20;
+
+From there you can access most of the game files.&#x20;
+
+The functions provided under the PugMod.API are the most stable currently so try to use them whenever possible.&#x20;
 
 Here are a couple of common API calls that you can use:
 
@@ -32,6 +71,152 @@ Here are a couple of common API calls that you can use:
 * API.Effects.PlayPuff\` can be used to play VFX.
 * API.Audio.PlaySfx can be used to play SFX.
 * API.Server.World can be used to interact with the server.
+
+Here is an example of using some of these API calls:
+
+```csharp
+using HarmonyLib;
+using Unity.Mathematics;
+using UnityEngine;
+using PugMod;
+using System;
+using PlayerEquipment;
+using Unity.Entities;
+
+public class SpawnStuffFromTiles : IMod
+{
+   /* 
+    * We have these flags and the entire script split into an IMod implementation and a Harmony patch because the API calls we use must run on Unitys' main thread.
+    * If we tried to run them in ECS which is where ShovelSlot.PlayDigEffects() runs, it would break.
+    * So the Harmony patch just detects when ShovelSlot.PlayDigEffects() has finished and sets a flag to true, 
+    * and then the Update() method which runs every frame on the main thread checks that flag and runs our logic.
+    */
+    public static bool spawnObjectAndFX = false;
+    public static float3 diggingPosition;
+    private static Unity.Mathematics.Random random;
+
+    public void EarlyInit()
+    {
+    }
+
+    public void Init()
+    {
+        BurstDisabler.DisableBurstForSystem<EquipmentUpdateSystem>();
+    }
+
+    public void ModObjectLoaded(UnityEngine.Object obj)
+    {
+    }
+
+    public void Shutdown()
+    {
+    }
+
+    public void Update()
+    {
+        var player = Manager.main.player;
+
+        if (player == null)
+        {
+            return;
+        }
+
+        // Check if conditions have been met for us to run our function.
+        if (spawnObjectAndFX)
+        {
+            // Reset the flag so that once it gets set to true it doesn't keep spawning FX and Objects forever. A good thing to know is that Update in Unity runs every frame.
+            spawnObjectAndFX = false;
+            SpawnObjectAndDoFX();
+        }
+    }
+
+    private void SpawnObjectAndDoFX()
+    {
+        // Get the local players' instance.
+        var player = Manager.main.player;
+
+        if (player == null)
+        {
+            return;
+        }
+
+        // Random number generating utility that is thread-safe, use this over Random.Range when working in ECS.
+        // CreateFromIndex is needed when creating it from sequential values like index or time/ticks.
+        random = Unity.Mathematics.Random.CreateFromIndex((uint)DateTime.Now.Ticks);
+
+        var playerPosition = player.transform.position;
+        Vector3 FXPosition = new(playerPosition.x, 0.5f, playerPosition.z);
+
+        var objectSpawnPosition = diggingPosition + new float3(0, 0.5f, 0);
+
+        // Play VFX at local players' position.
+        API.Effects.PlayPuff((int)PuffID.AncientEnergyBurst, FXPosition, 50);
+
+        // Play a sound effect.
+        API.Audio.PlaySfx(SfxTableID.acidLarvaDeath, FXPosition, pitchMultiplier: 1f, volumeMultiplier: 2f);
+
+        // Get a random Object ID between 1001 and 1011, on Core Keepers' end these are all the bars from bronze to relucite.
+        int randomObjectID = random.NextInt(1001, 1011);
+
+        // Drop the object.
+        if (API.Server.World != null)
+        {
+            API.Server.DropObject(randomObjectID, 0, 1, objectSpawnPosition);
+        }
+    }
+}
+
+[HarmonyPatch(typeof(ShovelSlot), "PlayDigEffects")]
+public class SpawnObjectAndPlayFXAfterShoveling
+{
+    private static Unity.Mathematics.Random random;
+
+    // Runs after ShovelSlot.PlayDigEffects() has already finished running.
+    [HarmonyPostfix]
+    public static void PostPlayDigEffects(float3 position, EquipmentUpdateAspect equipmentUpdateAspect)
+    {
+        // Get player instance
+        var player = Manager.main.player;
+
+        // Check if our player is the one that has eaten something and should be teleported.
+        if (equipmentUpdateAspect.entity != player.entity)
+        {
+            // Return early if it's not our player so that we don't get teleported whenever other party members eat.
+            return;
+        }
+
+        // Random number generating utility that is thread-safe, use this over Random.Range when working in ECS.
+        random = new Unity.Mathematics.Random((uint)DateTime.Now.Ticks);
+
+        // Roll 1-100 and if we roll above 50 then the Object gets spawned and SFX+VFX play.
+        if (random.NextInt(0, 100) < 50)
+        {
+            // Tile that's causing the effect to occur.
+            SpawnStuffFromTiles.diggingPosition = position;
+
+            // Tells Update that we're now meeting all the conditions to spawn the Object and play the SFX+VFX.
+            SpawnStuffFromTiles.spawnObjectAndFX = true;
+        }
+    }
+}
+
+/*
+ * This is a workaround for the job running with burst since it starts after
+ * OnUpdate. This slows down the game since we wait for all jobs to finish on
+ * the main thread.
+ */
+[HarmonyPatch(typeof(EquipmentUpdateSystem), "OnUpdate")]
+public static class ForceJobCompletePatch
+{
+    [HarmonyPostfix]
+    [HarmonyPriority(Priority.High)] // Not needed for ISystem, but for SystemBase we want to make sure this runs before burst is enabled again
+    public static void Postfix(ref SystemState state)
+    {
+        state.Dependency.Complete();
+    }
+}
+
+```
 {% endstep %}
 
 {% step %}
@@ -56,9 +241,17 @@ You can overcome these limitations by finding the Mod Builder Settings Scriptabl
 {% endstep %}
 
 {% step %}
-### Creating a prefab
+### Creating a prefab (game object)
 
-To create a prefab for your mod, head over to `Assets/<YourModNameFolder>` and inside of it right click, then select `Create > Prefab`. The most common purpose if a prefab is to implement components that will determine how an item for example behaves in-game. Think of it as a data container. There are different types of authoring components that you can add to your prefab, but here are the most common ones that you'd want to add to for example make a mod which adds a new Sword.
+A prefab in Unity is a game object which holds data, for example the rotation of an item and such.&#x20;
+
+To create a prefab for your mod, head over to `Assets/<YourModNameFolder>` and inside of it right click, then select `Create > Scene > Prefab`.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+
+The most common purpose if a prefab is to implement components that will determine how an item for example behaves in-game.&#x20;
+
+Think of it as a data container. There are different types of authoring components that you can add to your prefab, but here are the most common ones that you'd want to add to for example make a mod which adds a new Sword.
 {% endstep %}
 
 {% step %}
