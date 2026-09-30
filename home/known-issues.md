@@ -7,7 +7,7 @@ icon: bug
 
 #### Ghost Component cap
 
-Creating more than a handful new ghost components results in the game crashing. ~~This will be fixed in the next stability patch, most likely early next week~~. This issue has been fixed, but a related issue to the player archetype size has popped up, we are investigating the issue.
+Creating more than a handful new ghost components results in the game crashing. ~~This will be fixed in the next stability patch, most likely early next week~~. This issue has been fixed, but a related issue has appeared where exceeding the player archetypes' limit causes similar crashes. The workaround for this is the same as before - to have less components. We are investigating the issue.
 
 #### SDK Error: LimitExceeded
 
