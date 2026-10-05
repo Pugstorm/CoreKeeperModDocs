@@ -6,6 +6,10 @@ description: >-
 
 # Custom Scene Creation
 
+<details>
+
+<summary>Getting started</summary>
+
 First, make sure you've updated your game files and game assets! Once you've done so you may begin with clicking on the `PugMod` menu option at the top, and proceeding to `Open Mod SDK Window`.
 
 <figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
@@ -30,7 +34,11 @@ You'll then need to navigate to the `Custom Scene` type, you can do so by pressi
 
 <figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
-### Creating a Custom Scene
+</details>
+
+<details>
+
+<summary>Creating a Custom Scene</summary>
 
 Next press the `+` sign and select `Data Block`. You'll have to name the scene and then press enter to save.
 
@@ -42,7 +50,7 @@ You will now create your custom scene! Press `Create scene from template`.
 
 Once your custom scene is created, you'll notice that there are a few interesting fields, namely:
 
-* Max Occurences, which represents the maximum amount of times that your custom scene may spawn in the world. You may increase this to any number but it should always be at least 1.
+* Max Occurances, which represents the maximum amount of times that your custom scene may spawn in the world. You may increase this to any number but it should always be at least 1.
 * Biomes To Spawn In, which represents which biomes your custom scene can spawn in. If you'd like to make your custom scene spawn in another biome other than `Slime`, you can click on the dropdown and select another biome. If you'd like to make your scene spawn in multiple biomes, you may press the `+` button to add an entry to the list of biomes which your scene may spawn in. These should be unique entries.&#x20;
 
 The rest of the settings are advanced use cases, so we won't cover them in this guide, although if you've installed your custom scene mod and can't spawn your scene, I'd recommend pressing `Reprocess this scene`.
@@ -67,7 +75,11 @@ You'll notice that some highlights are green, while some are yellow. A green hig
 
 <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
-### How to use the Custom Scene Creation tools
+</details>
+
+<details>
+
+<summary>How to use the Custom Scene Creation tools</summary>
 
 #### Tile Palette
 
@@ -143,7 +155,11 @@ By heading over to `Actions` in the top right corner of the custom scene creatio
 
 <figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
-### Building your scene into a mod
+</details>
+
+<details>
+
+<summary>Building your scene into a mod</summary>
 
 To build your custom scene you should proceed back to the Mod SDK Window, by pressing `PugMod` in the menu options and then selecting `Open Mod SDK Window`. Once you're there you should proceed to the `Mod Management` tab and press `Build and Install Mod`.
 
@@ -151,7 +167,11 @@ You will receive a pop-up asking you if you would like for your custom scene to 
 
 <figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
-### Testing the scene in-game
+</details>
+
+<details>
+
+<summary>Testing the scene in-game</summary>
 
 To test your custom scene in-game you should install the `Mod Utilies` mod as well, by extracting the examples.zip into your assets folder, and then building the `Mod Utilities` mod locally via the `Build and Install Mod` option, after selecting it from the dropdown.
 
@@ -163,7 +183,11 @@ This will spawn your custom scene in-game!&#x20;
 
 <figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
-### Publishing your scene
+</details>
+
+<details>
+
+<summary>Publishing your scene</summary>
 
 To publish your custom scene you should open the `Steam Workshop` tab in the Mod SDK Window and select your mod from the dropdown, then fill out the fields as you see fit! Once you're ready, press `Upload Mod to Steam Workshop`.&#x20;
 
@@ -176,3 +200,5 @@ Once it has been uploaded, you can press `Go to Mod page` to go to your mod's pa
 Other players will now be able to download and use your scene in-game by subscribing to this mod.
 
 <figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+
+</details>
