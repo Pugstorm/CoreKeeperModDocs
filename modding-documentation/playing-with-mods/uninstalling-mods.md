@@ -18,7 +18,7 @@ In case you'd like to unsubscribe from a specific mod, please search for it in t
 ## Mods on mod.io
 
 Mods downloaded through mod.io will be downloaded to this directory:\
-`C:\Users\Public\mod.io\5289\mods\`<br>
+`C:\Users\Public\mod.io\5289\mods\`
 
 {% hint style="warning" %}
 Similarly to Steam Workshop, it is not recommended to uninstall them directly as that might cause issues.
@@ -30,4 +30,4 @@ If you'd like to uninstall a mod, you should head in-game to the "MODS" menu opt
 
 To uninstall any mods which you have installed manually, you need to head to the game installation folder and then into `CoreKeeper_Data\StreamingAssets\Mods`
 
-This is also where you had to install them at first. So just delete them from there and open up your game again.
+This is also where you had to install them at first. So just delete them from there and open up your game again. These mods cannot be uninstalled while the game is running.
