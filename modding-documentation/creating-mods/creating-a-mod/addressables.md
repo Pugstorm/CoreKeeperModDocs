@@ -12,4 +12,4 @@ This is a requirement of the `AssetReference` field. Without checking this box, 
 
 Addressables is a pretty complex system and this might give you all kinds of question when working in the Mod SDK regarding what address you should choose, if you need to select some specific label or tweak other settings.
 
-The easy answer here is that none of it matters! The reason being that mods don't use Addressables at all. The mod loader logic will add any assets to Addressables in such a way that `AssetReference` will still work. Fetching mod assets via labels will not work. If we need to get all assets of a certain type or group we will be using ScriptableData and data blocks instead of Addressables labels.
+**The easy answer here is that none of it matters!** The reason being that mods don't use Addressables at all. The mod loader logic will add any assets to Addressables in such a way that `AssetReference` will still work. Fetching mod assets via labels will not work. If we need to get all assets of a certain type or group we will be using ScriptableData and data blocks instead of Addressables labels.

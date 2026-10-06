@@ -11,7 +11,7 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-A `TextDataBlock` can define two strings: a title and a description. Both are optional, as long as the other is provided (meaning you can have a `TextDataBlock` with just a title or just a description).
+A `TextDataBlock` can define two strings: a title and a description. At least one of them needs to be provided, meaning you can have a `TextDataBlock` with just a title or just a description.
 
 The key used for runtime lookups is the name of the data block. Keys should use the following conventions:
 
