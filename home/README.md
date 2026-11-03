@@ -5,7 +5,7 @@ icon: list-check
 # Getting Started
 
 {% hint style="success" %}
-The modding tools and Steam Workshop integration are now officially released! Found out more [here](info-and-news.md)!
+The modding tools and Steam Workshop integration are now officially released! Find out more [here](info-and-news.md)!
 {% endhint %}
 
 This documentation contains everything you need to create and share mods, including SDK updates and code examples to help you get started.
